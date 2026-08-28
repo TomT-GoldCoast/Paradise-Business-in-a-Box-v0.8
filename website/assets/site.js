@@ -1,0 +1,11 @@
+async function tenant(){try{return await (await fetch('/api/public/config')).json()}catch{return {tenant:{shortName:'Paradise Lawn Care',name:'Paradise Lawn Care of the Treasure Coast LLC',phone:'772-323-9401',email:'paradiselawncare772@gmail.com',brand:{}}}}}
+function emailBody(p){return `Paradise Lawn Care Estimate Request\n\nName: ${p.name||''}\nPhone: ${p.phone||''}\nEmail: ${p.email||''}\nProperty: ${p.address||''}\nService: ${p.service||''}\n\nNotes:\n${p.notes||''}`}
+function applyTenant(t){
+  const b=t.brand||{},root=document.documentElement;
+  if(b.accent)root.style.setProperty('--green',b.accent); if(b.accentDark)root.style.setProperty('--green2',b.accentDark); if(b.highlight)root.style.setProperty('--orange',b.highlight); if(b.gold)root.style.setProperty('--gold',b.gold);
+  const logo=b.websiteLogoUrl||'/website/assets/paradise-logo-master.png';document.querySelectorAll('img[src*="paradise-logo"]').forEach(img=>img.src=logo);
+  document.querySelectorAll('[data-phone]').forEach(x=>{x.textContent=x.classList.contains('btn')?'Call '+t.phone:t.phone;x.href='tel:'+String(t.phone||'').replace(/\D/g,'')});
+  document.querySelectorAll('a[href^="mailto:"]').forEach(x=>{x.href='mailto:'+(t.email||''); if(x.textContent.includes('@'))x.textContent='✉ '+t.email});
+}
+async function wire(){const cfg=await tenant(),t=cfg.tenant||{};applyTenant(t);const phone=t.phone||'772-323-9401',email=t.email||'paradiselawncare772@gmail.com';const form=document.querySelector('#estimateForm');if(!form)return;form.onsubmit=async e=>{e.preventDefault();const result=document.querySelector('#estimateResult');const payload=Object.fromEntries(new FormData(form));payload.source='Website Estimate';let saved=false;try{const r=await fetch('/api/public/leads',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(payload)});saved=r.ok}catch{}const subject=encodeURIComponent(`Estimate request - ${payload.name||payload.address||'Website lead'}`);const body=encodeURIComponent(emailBody(payload));result.innerHTML=`<div class="success">${saved?'Saved to operations. ':''}Your estimate request is addressed to ${email}. If your mail app does not open, call ${phone} or email Paradise directly.</div>`;window.setTimeout(()=>{window.location.href=`mailto:${email}?subject=${subject}&body=${body}`},250)}}
+wire();

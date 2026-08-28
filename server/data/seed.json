@@ -1,0 +1,971 @@
+{
+  "tenant": {
+    "id": "tenant_paradise",
+    "name": "Paradise Lawn Care of the Treasure Coast LLC",
+    "shortName": "Paradise Lawn Care",
+    "domain": "paradiselawncaretreasurecoast.com",
+    "vertical": "lawn-care",
+    "timezone": "America/New_York",
+    "serviceArea": "Port St. Lucie \u00b7 Jensen Beach \u00b7 Stuart \u00b7 Palm City \u00b7 Hobe Sound",
+    "brand": {
+      "mark": "P",
+      "accent": "#5cff00",
+      "accentDark": "#27c600",
+      "logoUrl": "/app/assets/paradise-logo-master.png",
+      "websiteLogoUrl": "/website/assets/paradise-logo-master.png",
+      "appLogoUrl": "/app/assets/paradise-logo-master.png",
+      "surface": "#111312",
+      "ink": "#f5f7f3",
+      "highlight": "#ff7a00",
+      "gold": "#ffbd46",
+      "nav": "#050606",
+      "themePreset": "paradise-sunset"
+    },
+    "phone": "772-323-9401",
+    "email": "paradiselawncare772@gmail.com",
+    "address": "Treasure Coast, FL",
+    "website": "https://paradiselawncaretreasurecoast.com",
+    "productName": "Business in a Box",
+    "accountPrefix": "PLC",
+    "currency": "USD",
+    "locale": "en-US",
+    "websiteHero": {
+      "eyebrow": "PORT ST. LUCIE \u00b7 TREASURE COAST",
+      "headline": "We make your lawn Paradise Perfect.",
+      "subheadline": "Reliable residential lawn maintenance with local routes, clear communication and a clean finish after every visit.",
+      "cta": "Request an Estimate"
+    },
+    "workflow": {
+      "autoInvoiceOnCompletion": true,
+      "requireCompletionNote": false,
+      "defaultJobDuration": 30
+    },
+    "ownerName": "Brandon Pecci",
+    "serviceAreas": [
+      "Port St. Lucie",
+      "Jensen Beach",
+      "Stuart",
+      "Palm City",
+      "Hobe Sound"
+    ],
+    "content": {
+      "blogEnabled": true,
+      "articleCount": 31,
+      "estimateOnlyPricing": true
+    },
+    "modules": {
+      "weather": true,
+      "history": true,
+      "alerts": true,
+      "documents": true,
+      "routes": true,
+      "backup": true,
+      "inventory": true,
+      "maintenance": true,
+      "expenses": true,
+      "communications": true,
+      "customerPortal": true,
+      "crew": true
+    }
+  },
+  "users": [
+    {
+      "id": "u_owner",
+      "name": "Brandon Pecci",
+      "role": "owner",
+      "title": "Owner / Administrator"
+    },
+    {
+      "id": "u_office",
+      "name": "Morgan Ellis",
+      "role": "office",
+      "title": "Office Coordinator"
+    },
+    {
+      "id": "u_crew",
+      "name": "Luis Ramirez",
+      "role": "crew",
+      "title": "Crew Lead"
+    },
+    {
+      "id": "u_customer",
+      "name": "Jordan Smith",
+      "role": "customer",
+      "title": "Customer"
+    }
+  ],
+  "metrics": {
+    "monthlyRevenue": 24680,
+    "openReceivables": 3820,
+    "activeCustomers": 10,
+    "jobsToday": 10,
+    "routeMiles": 31.6,
+    "grossMargin": 62.4
+  },
+  "leads": [
+    {
+      "id": "lead_1048",
+      "name": "Avery Collins",
+      "service": "Recurring lawn service",
+      "address": "224 SW Bayshore Blvd, Port St. Lucie, FL",
+      "source": "Website",
+      "status": "New",
+      "created": "12 min ago"
+    },
+    {
+      "id": "lead_1047",
+      "name": "Daniel Reed",
+      "service": "Pressure washing",
+      "address": "980 SE Port St. Lucie Blvd, Port St. Lucie, FL",
+      "source": "Google",
+      "status": "Quoted",
+      "created": "1 hr ago"
+    },
+    {
+      "id": "lead_1046",
+      "name": "Camila Jones",
+      "service": "Landscape cleanup",
+      "address": "1181 SE Floresta Dr, Port St. Lucie, FL",
+      "source": "Referral",
+      "status": "Follow-up",
+      "created": "Yesterday"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job_501",
+      "time": "8:00 AM",
+      "customer": "Jordan Smith",
+      "address": "123 SE Main St",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "Completed",
+      "duration": 22,
+      "crew": "Luis + Mia",
+      "customerId": "cust_001",
+      "date": "2026-08-25",
+      "amount": 140,
+      "notes": "",
+      "accountNumber": "PLC-000001",
+      "propertyId": "prop_001"
+    },
+    {
+      "id": "job_502",
+      "time": "8:45 AM",
+      "customer": "Evelyn Carter",
+      "address": "221 SE Maple Ave",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "In progress",
+      "duration": 28,
+      "crew": "Luis + Mia",
+      "customerId": "cust_002",
+      "date": "2026-08-25",
+      "amount": 140,
+      "notes": "Avoid mango tree.",
+      "accountNumber": "PLC-000002",
+      "propertyId": "prop_002"
+    },
+    {
+      "id": "job_503",
+      "time": "9:30 AM",
+      "customer": "Noah Williams",
+      "address": "319 SE River Ct",
+      "service": "Corner lot service",
+      "status": "Next",
+      "duration": 34,
+      "crew": "Luis + Mia",
+      "customerId": "cust_003",
+      "date": "2026-08-25",
+      "amount": 160,
+      "notes": "",
+      "accountNumber": "PLC-000003",
+      "propertyId": "prop_003"
+    },
+    {
+      "id": "job_504",
+      "time": "10:25 AM",
+      "customer": "Amelia Foster",
+      "address": "407 SE Oak Dr",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "Scheduled",
+      "duration": 24,
+      "crew": "Luis + Mia",
+      "customerId": "cust_004",
+      "date": "2026-08-25",
+      "amount": 140,
+      "notes": "",
+      "accountNumber": "PLC-000004",
+      "propertyId": "prop_004"
+    },
+    {
+      "id": "job_505",
+      "time": "11:05 AM",
+      "customer": "Liam Brooks",
+      "address": "525 SE Palm Way",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "Scheduled",
+      "duration": 27,
+      "crew": "Luis + Mia",
+      "customerId": "cust_005",
+      "date": "2026-08-25",
+      "amount": 140,
+      "notes": "",
+      "accountNumber": "PLC-000005",
+      "propertyId": "prop_005"
+    },
+    {
+      "id": "job_506",
+      "time": "11:45 AM",
+      "customer": "Hannah Green",
+      "address": "611 SW Paar Dr",
+      "service": "Corner lot service",
+      "status": "Scheduled",
+      "duration": 34,
+      "crew": "Luis + Mia",
+      "customerId": "cust_006",
+      "date": "2026-08-25",
+      "amount": 160,
+      "notes": "Call or text before first visit of each month. Side gate sticks; lift slightly to close.",
+      "accountNumber": "PLC-000006",
+      "propertyId": "prop_006"
+    },
+    {
+      "id": "job_507",
+      "time": "12:30 PM",
+      "customer": "Mason Lee",
+      "address": "742 SW Becker Rd",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "Scheduled",
+      "duration": 26,
+      "crew": "Luis + Mia",
+      "customerId": "cust_007",
+      "date": "2026-08-25",
+      "amount": 140,
+      "notes": "Keep grass at 4 inches during hottest months. No chemical applications without approval.",
+      "accountNumber": "PLC-000007",
+      "propertyId": "prop_007"
+    },
+    {
+      "id": "job_508",
+      "time": "1:15 PM",
+      "customer": "Sophia Martin",
+      "address": "856 SE Floresta Dr",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "Scheduled",
+      "duration": 26,
+      "crew": "Luis + Mia",
+      "customerId": "cust_008",
+      "date": "2026-08-25",
+      "amount": 190,
+      "notes": "Trim front shrubs every second visit. Leave clippings in green bin when space permits.",
+      "accountNumber": "PLC-000008",
+      "propertyId": "prop_008"
+    },
+    {
+      "id": "job_509",
+      "time": "2:00 PM",
+      "customer": "Oliver Bennett",
+      "address": "933 SE Sandia Dr",
+      "service": "Mow \u00b7 Edge \u00b7 Blow",
+      "status": "Scheduled",
+      "duration": 26,
+      "crew": "Luis + Mia",
+      "customerId": "cust_009",
+      "date": "2026-08-25",
+      "amount": 140,
+      "notes": "Irrigation heads near mailbox and southwest corner are raised; use caution when edging.",
+      "accountNumber": "PLC-000009",
+      "propertyId": "prop_009"
+    },
+    {
+      "id": "job_510",
+      "time": "2:45 PM",
+      "customer": "Mia Thompson",
+      "address": "1048 SW California Blvd",
+      "service": "Corner lot service",
+      "status": "Scheduled",
+      "duration": 34,
+      "crew": "Luis + Mia",
+      "customerId": "cust_010",
+      "date": "2026-08-25",
+      "amount": 185,
+      "notes": "Corner lot with large oak. Seasonal leaf cleanup is billed separately after approval.",
+      "accountNumber": "PLC-000010",
+      "propertyId": "prop_010"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-10842",
+      "customer": "Hannah Green",
+      "amount": 160,
+      "status": "Overdue",
+      "due": "Aug 18",
+      "customerId": "cust_006",
+      "paid": 0,
+      "created": "2026-08-20",
+      "accountNumber": "PLC-000006",
+      "propertyId": "prop_006",
+      "lines": [
+        {
+          "description": "Recurring lawn service",
+          "qty": 1,
+          "rate": 160,
+          "amount": 160
+        }
+      ]
+    },
+    {
+      "id": "INV-10847",
+      "customer": "Mason Lee",
+      "amount": 140,
+      "status": "Due",
+      "due": "Aug 27",
+      "customerId": "cust_007",
+      "paid": 0,
+      "created": "2026-08-20",
+      "accountNumber": "PLC-000007",
+      "propertyId": "prop_007",
+      "lines": [
+        {
+          "description": "Recurring lawn service",
+          "qty": 1,
+          "rate": 140,
+          "amount": 140
+        }
+      ]
+    },
+    {
+      "id": "INV-10851",
+      "customer": "Sophia Martin",
+      "amount": 310,
+      "status": "Draft",
+      "due": "\u2014",
+      "customerId": "cust_008",
+      "paid": 0,
+      "created": "2026-08-20",
+      "accountNumber": "PLC-000008",
+      "propertyId": "prop_008",
+      "lines": [
+        {
+          "description": "Recurring lawn service",
+          "qty": 1,
+          "rate": 310,
+          "amount": 310
+        }
+      ]
+    }
+  ],
+  "customer": {
+    "id": "cust_001",
+    "name": "Jordan Smith",
+    "email": "jordan.smith@example.com",
+    "phone": "(772) 555-0101",
+    "status": "Active",
+    "property": "123 SE Main St, Port St. Lucie, FL 34984",
+    "plan": "Standard Lawn Care \u00b7 4 visits/month",
+    "monthlyValue": 140,
+    "nextService": "Aug 27",
+    "balance": 0,
+    "lastService": "Aug 20",
+    "notes": "Gate on left side. Please keep mowing height at 3.5 inches.",
+    "accountNumber": "PLC-000001",
+    "preferredContact": "Email",
+    "preferredPayment": "Card",
+    "properties": [
+      {
+        "id": "prop_001",
+        "label": "Primary Property",
+        "address": "123 SE Main St, Port St. Lucie, FL 34984",
+        "serviceNotes": "Gate on left side. Please keep mowing height at 3.5 inches.",
+        "active": true
+      }
+    ],
+    "primaryPropertyId": "prop_001"
+  },
+  "activity": [
+    {
+      "time": "12:02 PM",
+      "text": "Website lead received from Avery Collins",
+      "type": "lead"
+    },
+    {
+      "time": "11:46 AM",
+      "text": "INV-10839 paid \u00b7 $140.00",
+      "type": "payment"
+    },
+    {
+      "time": "11:18 AM",
+      "text": "Route stop completed for Jordan Smith",
+      "type": "job"
+    },
+    {
+      "time": "10:52 AM",
+      "text": "Quote Q-2041 accepted online",
+      "type": "quote"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust_001",
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "phone": "(772) 555-0101",
+      "status": "Active",
+      "property": "123 SE Main St, Port St. Lucie, FL 34984",
+      "plan": "Standard Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 140,
+      "nextService": "Aug 27",
+      "balance": 0,
+      "lastService": "Aug 20",
+      "notes": "Gate on left side. Please keep mowing height at 3.5 inches.",
+      "accountNumber": "PLC-000001",
+      "preferredContact": "Email",
+      "preferredPayment": "Card",
+      "properties": [
+        {
+          "id": "prop_001",
+          "label": "Primary Property",
+          "address": "123 SE Main St, Port St. Lucie, FL 34984",
+          "serviceNotes": "Gate on left side. Please keep mowing height at 3.5 inches.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_001",
+      "customerType": "Residential",
+      "serviceFrequency": "Weekly",
+      "billingMethod": "Per Service",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_002",
+      "name": "Evelyn Carter",
+      "email": "evelyn.carter@example.com",
+      "phone": "(772) 555-0102",
+      "status": "Active",
+      "property": "221 SE Maple Ave, Port St. Lucie, FL 34984",
+      "plan": "Standard Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 140,
+      "nextService": "Aug 27",
+      "balance": 0,
+      "lastService": "Aug 20",
+      "notes": "Back gate is unlocked on service day. Avoid trimming the young mango tree.",
+      "accountNumber": "PLC-000002",
+      "preferredContact": "Phone",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_002",
+          "label": "Primary Property",
+          "address": "221 SE Maple Ave, Port St. Lucie, FL 34984",
+          "serviceNotes": "Back gate is unlocked on service day. Avoid trimming the young mango tree.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_002",
+      "customerType": "Residential",
+      "serviceFrequency": "Weekly",
+      "billingMethod": "Bi-Weekly",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_003",
+      "name": "Noah Williams",
+      "email": "noah.williams@example.com",
+      "phone": "(772) 555-0103",
+      "status": "Active",
+      "property": "319 SE River Ct, Port St. Lucie, FL 34983",
+      "plan": "Corner Lot Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 160,
+      "nextService": "Aug 27",
+      "balance": 160,
+      "lastService": "Aug 20",
+      "notes": "Corner lot. Edge both street-facing sidewalks and blow clippings away from storm drain.",
+      "accountNumber": "PLC-000003",
+      "preferredContact": "Phone",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_003",
+          "label": "Primary Property",
+          "address": "319 SE River Ct, Port St. Lucie, FL 34983",
+          "serviceNotes": "Corner lot. Edge both street-facing sidewalks and blow clippings away from storm drain.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_003",
+      "customerType": "Residential",
+      "serviceFrequency": "Biweekly",
+      "billingMethod": "Monthly",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_004",
+      "name": "Amelia Foster",
+      "email": "amelia.foster@example.com",
+      "phone": "(772) 555-0104",
+      "status": "Active",
+      "property": "407 SE Oak Dr, Port St. Lucie, FL 34984",
+      "plan": "Standard Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 140,
+      "nextService": "Aug 27",
+      "balance": 0,
+      "lastService": "Aug 20",
+      "notes": "Please close both gates when leaving. Small dog may be in rear yard.",
+      "accountNumber": "PLC-000004",
+      "preferredContact": "Email",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_004",
+          "label": "Primary Property",
+          "address": "407 SE Oak Dr, Port St. Lucie, FL 34984",
+          "serviceNotes": "Please close both gates when leaving. Small dog may be in rear yard.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_004",
+      "customerType": "Residential",
+      "serviceFrequency": "Weekly",
+      "billingMethod": "Per Service",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_005",
+      "name": "Liam Brooks",
+      "email": "liam.brooks@example.com",
+      "phone": "(772) 555-0105",
+      "status": "Active",
+      "property": "525 SE Palm Way, Port St. Lucie, FL 34984",
+      "plan": "Standard Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 140,
+      "nextService": "Aug 27",
+      "balance": 140,
+      "lastService": "Aug 20",
+      "notes": "Do not mow inside fenced garden area. Blow driveway and front walk thoroughly.",
+      "accountNumber": "PLC-000005",
+      "preferredContact": "Phone",
+      "preferredPayment": "Card",
+      "properties": [
+        {
+          "id": "prop_005",
+          "label": "Primary Property",
+          "address": "525 SE Palm Way, Port St. Lucie, FL 34984",
+          "serviceNotes": "Do not mow inside fenced garden area. Blow driveway and front walk thoroughly.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_005",
+      "customerType": "Residential",
+      "serviceFrequency": "Weekly",
+      "billingMethod": "Monthly",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_006",
+      "name": "Hannah Green",
+      "email": "hannah.green@example.com",
+      "phone": "(772) 555-0106",
+      "status": "Active",
+      "property": "611 SW Paar Dr, Port St. Lucie, FL 34953",
+      "plan": "Corner Lot Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 160,
+      "nextService": "Aug 28",
+      "balance": 160,
+      "lastService": "Aug 21",
+      "notes": "Call or text before first visit of each month. Side gate sticks; lift slightly to close.",
+      "accountNumber": "PLC-000006",
+      "preferredContact": "Phone",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_006",
+          "label": "Primary Property",
+          "address": "611 SW Paar Dr, Port St. Lucie, FL 34953",
+          "serviceNotes": "Call or text before first visit of each month. Side gate sticks; lift slightly to close.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_006",
+      "customerType": "Residential",
+      "serviceFrequency": "Biweekly",
+      "billingMethod": "Bi-Weekly",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_007",
+      "name": "Mason Lee",
+      "email": "mason.lee@example.com",
+      "phone": "(772) 555-0107",
+      "status": "Active",
+      "property": "742 SW Becker Rd, Port St. Lucie, FL 34953",
+      "plan": "Standard Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 140,
+      "nextService": "Aug 28",
+      "balance": 140,
+      "lastService": "Aug 21",
+      "notes": "Keep grass at 4 inches during hottest months. No chemical applications without approval.",
+      "accountNumber": "PLC-000007",
+      "preferredContact": "Email",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_007",
+          "label": "Primary Property",
+          "address": "742 SW Becker Rd, Port St. Lucie, FL 34953",
+          "serviceNotes": "Keep grass at 4 inches during hottest months. No chemical applications without approval.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_007",
+      "customerType": "Residential",
+      "serviceFrequency": "Weekly",
+      "billingMethod": "Per Service",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_008",
+      "name": "Sophia Martin",
+      "email": "sophia.martin@example.com",
+      "phone": "(772) 555-0108",
+      "status": "Active",
+      "property": "856 SE Floresta Dr, Port St. Lucie, FL 34983",
+      "plan": "Lawn Care + Shrub Maintenance",
+      "monthlyValue": 190,
+      "nextService": "Aug 28",
+      "balance": 310,
+      "lastService": "Aug 21",
+      "notes": "Trim front shrubs every second visit. Leave clippings in green bin when space permits.",
+      "accountNumber": "PLC-000008",
+      "preferredContact": "Phone",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_008",
+          "label": "Primary Property",
+          "address": "856 SE Floresta Dr, Port St. Lucie, FL 34983",
+          "serviceNotes": "Trim front shrubs every second visit. Leave clippings in green bin when space permits.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_008",
+      "customerType": "Residential",
+      "serviceFrequency": "Monthly",
+      "billingMethod": "Monthly",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_009",
+      "name": "Oliver Bennett",
+      "email": "oliver.bennett@example.com",
+      "phone": "(772) 555-0109",
+      "status": "Active",
+      "property": "933 SE Sandia Dr, Port St. Lucie, FL 34983",
+      "plan": "Standard Lawn Care \u00b7 4 visits/month",
+      "monthlyValue": 140,
+      "nextService": "Aug 29",
+      "balance": 0,
+      "lastService": "Aug 22",
+      "notes": "Irrigation heads near mailbox and southwest corner are raised; use caution when edging.",
+      "accountNumber": "PLC-000009",
+      "preferredContact": "Phone",
+      "preferredPayment": "Card",
+      "properties": [
+        {
+          "id": "prop_009",
+          "label": "Primary Property",
+          "address": "933 SE Sandia Dr, Port St. Lucie, FL 34983",
+          "serviceNotes": "Irrigation heads near mailbox and southwest corner are raised; use caution when edging.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_009",
+      "customerType": "Residential",
+      "serviceFrequency": "Weekly",
+      "billingMethod": "Per Service",
+      "billingAnchor": "2026-08-01"
+    },
+    {
+      "id": "cust_010",
+      "name": "Mia Thompson",
+      "email": "mia.thompson@example.com",
+      "phone": "(772) 555-0110",
+      "status": "Active",
+      "property": "1048 SW California Blvd, Port St. Lucie, FL 34953",
+      "plan": "Corner Lot Lawn Care + Seasonal Cleanup",
+      "monthlyValue": 185,
+      "nextService": "Aug 29",
+      "balance": 0,
+      "lastService": "Aug 22",
+      "notes": "Corner lot with large oak. Seasonal leaf cleanup is billed separately after approval.",
+      "accountNumber": "PLC-000010",
+      "preferredContact": "Email",
+      "preferredPayment": "Invoice",
+      "properties": [
+        {
+          "id": "prop_010",
+          "label": "Primary Property",
+          "address": "1048 SW California Blvd, Port St. Lucie, FL 34953",
+          "serviceNotes": "Corner lot with large oak. Seasonal leaf cleanup is billed separately after approval.",
+          "active": true
+        }
+      ],
+      "primaryPropertyId": "prop_010",
+      "customerType": "Residential",
+      "serviceFrequency": "Biweekly",
+      "billingMethod": "Bi-Weekly",
+      "billingAnchor": "2026-08-01"
+    }
+  ],
+  "counters": {
+    "quote": 2050,
+    "job": 510,
+    "invoice": 10860,
+    "account": 11,
+    "property": 11,
+    "expense": 3,
+    "inventory": 4,
+    "maintenance": 3,
+    "request": 2,
+    "communication": 1
+  },
+  "quotes": [
+    {
+      "id": "Q-2049",
+      "customerId": "cust_003",
+      "customer": "Noah Williams",
+      "service": "Landscape cleanup",
+      "amount": 425,
+      "status": "Sent",
+      "created": "2026-08-24",
+      "notes": "Trim shrubs, bed cleanup, haul away debris.",
+      "accountNumber": "PLC-000003",
+      "propertyId": "prop_003"
+    },
+    {
+      "id": "Q-2048",
+      "customerId": "cust_006",
+      "customer": "Hannah Green",
+      "service": "Pressure washing",
+      "amount": 275,
+      "status": "Accepted",
+      "created": "2026-08-23",
+      "notes": "Driveway and front walk.",
+      "accountNumber": "PLC-000006",
+      "propertyId": "prop_006"
+    },
+    {
+      "id": "Q-2047",
+      "customerId": "cust_002",
+      "customer": "Evelyn Carter",
+      "service": "Mulch refresh",
+      "amount": 360,
+      "status": "Draft",
+      "created": "2026-08-22",
+      "notes": "Brown mulch, front beds only.",
+      "accountNumber": "PLC-000002",
+      "propertyId": "prop_002"
+    }
+  ],
+  "team": [
+    {
+      "id": "team_1",
+      "name": "Luis Ramirez",
+      "role": "Crew Lead",
+      "status": "Active",
+      "phone": "(772) 555-0120",
+      "rate": 24,
+      "skills": "Routing, mowing, equipment",
+      "email": "luis.ramirez@example.com",
+      "emergencyContact": "Emergency Contact",
+      "emergencyPhone": "(772) 555-0199",
+      "employmentType": "Employee",
+      "assignedEquipment": "Zero-turn mower #1"
+    },
+    {
+      "id": "team_2",
+      "name": "Mia Foster",
+      "role": "Crew Technician",
+      "status": "Active",
+      "phone": "(772) 555-0121",
+      "rate": 20,
+      "skills": "Mowing, edging, cleanup",
+      "email": "mia.foster@example.com",
+      "emergencyContact": "Emergency Contact",
+      "emergencyPhone": "(772) 555-0199",
+      "employmentType": "Employee",
+      "assignedEquipment": "Crew truck"
+    },
+    {
+      "id": "team_3",
+      "name": "Morgan Ellis",
+      "role": "Office Coordinator",
+      "status": "Active",
+      "phone": "(772) 555-0122",
+      "rate": 22,
+      "skills": "Scheduling, customer service, billing",
+      "email": "morgan.ellis@example.com",
+      "emergencyContact": "Emergency Contact",
+      "emergencyPhone": "(772) 555-0199",
+      "employmentType": "Employee",
+      "assignedEquipment": "Office"
+    }
+  ],
+  "services": [
+    {
+      "id": "svc_lawn_standard",
+      "name": "Standard Lawn Care",
+      "price": 140,
+      "frequency": "4 visits/month",
+      "active": true,
+      "description": "Recurring mowing, edging and cleanup for a standard residential property.",
+      "unit": "per month"
+    },
+    {
+      "id": "svc_lawn_corner",
+      "name": "Corner Lot Lawn Care",
+      "price": 160,
+      "frequency": "4 visits/month",
+      "active": true,
+      "description": "Recurring service configured for a larger corner-lot workload.",
+      "unit": "per month"
+    },
+    {
+      "id": "svc_cleanup",
+      "name": "Landscape Cleanup",
+      "price": 225,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Seasonal or one-time landscape cleanup and property reset.",
+      "unit": "per project"
+    },
+    {
+      "id": "svc_pressure",
+      "name": "Pressure Washing",
+      "price": 275,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Exterior pressure-washing service quoted by property scope.",
+      "unit": "per project"
+    }
+  ],
+  "communications": {
+    "templates": [
+      {
+        "id": "tpl_weather",
+        "name": "Weather Delay",
+        "channel": "Both",
+        "subject": "Service schedule update",
+        "body": "Weather may affect today\u2019s route. We will keep you updated if your service window changes."
+      },
+      {
+        "id": "tpl_appointment",
+        "name": "Appointment Reminder",
+        "channel": "Both",
+        "subject": "Upcoming service reminder",
+        "body": "Your upcoming service is scheduled. Please make sure gates are accessible and pets are secured."
+      },
+      {
+        "id": "tpl_payment",
+        "name": "Payment Reminder",
+        "channel": "Email",
+        "subject": "Friendly invoice reminder",
+        "body": "This is a friendly reminder that your account has an open invoice. Please contact us if you need another copy."
+      },
+      {
+        "id": "tpl_completed",
+        "name": "Service Completed",
+        "channel": "Both",
+        "subject": "Service completed",
+        "body": "Your scheduled service has been completed. Thank you for your business."
+      }
+    ],
+    "log": []
+  },
+  "customerRequests": [
+    {
+      "id": "req_001",
+      "customerId": "cust_001",
+      "type": "Add-on service",
+      "message": "Please quote trimming the two front palms on the next visit.",
+      "status": "Open",
+      "created": "2026-08-24"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp_001",
+      "date": "2026-08-23",
+      "category": "Fuel",
+      "vendor": "Sunoco",
+      "amount": 86.42,
+      "notes": "Crew truck fuel"
+    },
+    {
+      "id": "exp_002",
+      "date": "2026-08-22",
+      "category": "Supplies",
+      "vendor": "Landscape Supply",
+      "amount": 142.18,
+      "notes": "Trimmer line and blades"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "invitem_001",
+      "name": "Trimmer line",
+      "category": "Consumable",
+      "qty": 7,
+      "reorderAt": 4,
+      "unit": "spools"
+    },
+    {
+      "id": "invitem_002",
+      "name": "Edger blades",
+      "category": "Consumable",
+      "qty": 3,
+      "reorderAt": 4,
+      "unit": "blades"
+    },
+    {
+      "id": "invitem_003",
+      "name": "2-cycle oil",
+      "category": "Consumable",
+      "qty": 12,
+      "reorderAt": 6,
+      "unit": "bottles"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "maint_001",
+      "equipment": "Zero-turn mower #1",
+      "type": "Oil / filter",
+      "due": "2026-09-02",
+      "status": "Upcoming",
+      "notes": "50-hour interval",
+      "model": "Commercial equipment",
+      "serial": "PLC-001",
+      "currentReading": "",
+      "completedDate": "",
+      "vendor": "",
+      "cost": 0
+    },
+    {
+      "id": "maint_002",
+      "equipment": "Crew truck",
+      "type": "Tire rotation",
+      "due": "2026-09-12",
+      "status": "Upcoming",
+      "notes": "Check rear tire wear",
+      "model": "Commercial equipment",
+      "serial": "PLC-002",
+      "currentReading": "",
+      "completedDate": "",
+      "vendor": "",
+      "cost": 0
+    }
+  ],
+  "attachments": [],
+  "billingRuns": [],
+  "payroll": []
+}

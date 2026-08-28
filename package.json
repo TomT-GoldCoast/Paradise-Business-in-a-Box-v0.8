@@ -1,0 +1,24 @@
+{
+  "name": "paradise-business-in-a-box",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "test": "node tests/smoke.mjs",
+    "test:workflow": "node tests/workflow.mjs",
+    "test:quotes": "node tests/quote-routing.mjs",
+    "test:ui": "node tests/public-ui-regression.mjs",
+    "test:all": "npm test && npm run test:workflow && npm run test:quotes && npm run test:ui && npm run test:visual && npm run test:attachments && npm run test:tenant && npm run test:backup && npm run test:providers && npm run test:parity",
+    "test:visual": "node tests/visual-contract.mjs",
+    "test:attachments": "node tests/attachments.mjs",
+    "test:tenant": "node tests/tenant-branding.mjs",
+    "test:backup": "node tests/backup-restore.mjs",
+    "test:providers": "node tests/provider-contracts.mjs",
+    "test:parity": "node tests/parity-upgrade.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "description": "Business in a Box v0.8.0 with Paradise Lawn Care Tenant #1 and v3.21B parity upgrades"
+}

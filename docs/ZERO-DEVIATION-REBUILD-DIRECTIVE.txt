@@ -1,0 +1,843 @@
+PARADISE LAWN CARE OF THE TREASURE COAST
+BUSINESS IN A BOX — ZERO-DEVIATION REBUILD PROMPT
+
+THIS IS A PRODUCTION REBUILD TASK.
+
+Do not create another mockup.
+Do not create another concept image.
+Do not reinterpret the approved design.
+Do not simplify the design.
+Do not redesign it in your own style.
+Do not substitute a generic admin dashboard.
+
+THE APPROVED SAMPLE IMAGE IS THE VISUAL AUTHORITY.
+
+The finished, running website and application must look as close as technically possible to the supplied approved Paradise Lawn Care sample image.
+
+Treat the sample exactly like a construction drawing.
+
+If you are deciding between:
+A. your interpretation
+B. matching the supplied sample
+
+ALWAYS choose B.
+
+==================================================
+1. SOURCE AUTHORITIES
+==================================================
+
+Use these sources in this exact order:
+
+1. Business-in-a-Box-Prototype-v0.4.2.zip
+   Authority for:
+   - modular architecture
+   - tenant model
+   - reusable Business in a Box structure
+   - side navigation
+   - CRM lifecycle
+   - account / property / quote / job / invoice workflow
+
+2. Paradise-Lawn-Care-v3.21B-Development-Candidate-5.zip
+   Authority for:
+   - ALL existing Paradise Lawn Care functionality
+   - schedules
+   - customers
+   - properties
+   - quotes
+   - jobs
+   - invoices
+   - documents
+   - communications
+   - preferred contact
+   - routing
+   - equipment
+   - inventory
+   - maintenance
+   - weather
+   - alerts
+   - history
+   - backup
+   - attachments/photos
+   - dashboard behavior
+   - all other existing operational functions
+
+Never remove a working Paradise function merely because it is difficult to migrate.
+
+3. Paradise-Business-in-a-Box-v0.5.0.zip
+   This is the current combined development build.
+
+Use it as the starting point for the new version.
+
+DO NOT merely modify colors on v0.5.0.
+The user has rejected the current visual implementation.
+Rebuild the user-facing UI while preserving the operational architecture and working backend.
+
+4. Business in a Box Constitution / CONSTITUTION.md
+   Platform governance authority.
+
+5. PARADISE TENANT BUILD SPECIFICATION / authoritative build prompt
+   Paradise-specific implementation and acceptance authority.
+
+6. Claude-Code-Working-Library.zip
+   REFERENCE ONLY.
+   Claude is not the architecture, product, branding, or visual authority.
+
+7. Paradise-Lawn-Care-SEO-Articles.zip
+   Authority for the existing 31 Paradise articles.
+
+8. EXACT supplied Paradise Lawn Care logo image.
+   This logo must be used.
+   DO NOT regenerate it.
+   DO NOT redraw it.
+   DO NOT reimagine it.
+   DO NOT create an AI approximation.
+
+9. APPROVED PARADISE WEBSITE / APP SAMPLE IMAGE.
+   THIS IS THE VISUAL ACCEPTANCE STANDARD.
+
+==================================================
+2. EXACT PARADISE TENANT DATA
+==================================================
+
+Business:
+Paradise Lawn Care of the Treasure Coast LLC
+
+Owner:
+Brandon Pecci
+
+Phone:
+772-323-9401
+
+Email:
+paradiselawncare772@gmail.com
+
+Service areas:
+- Port St. Lucie
+- Jensen Beach
+- Stuart
+- Palm City
+- Hobe Sound
+
+Primary slogan:
+
+“We Make Your Lawn PARADISE PERFECT”
+
+No fixed public lawn-maintenance prices.
+
+Customers must request a property-specific estimate.
+
+==================================================
+3. ABSOLUTE VISUAL RULE
+==================================================
+
+DO NOT REIMAGINE THE SAMPLE.
+
+Reproduce it.
+
+The approved sample should govern:
+
+- layout
+- proportions
+- color placement
+- logo scale
+- logo location
+- header height
+- grass imagery
+- tropical imagery
+- palm/coastal imagery
+- black/deep-green navigation areas
+- vivid greens
+- orange CTA buttons
+- bright lime accent buttons
+- card geometry
+- rounded corners
+- borders
+- spacing
+- dashboard density
+- typography hierarchy
+- service-area presentation
+- weather presentation
+- route presentation
+- footer presentation
+
+The finished localhost pages should be recognizable as the same interface shown in the approved sample.
+
+Do NOT claim visual completion until the running application has been compared side-by-side with the supplied sample.
+
+==================================================
+4. EXACT LOGO REQUIREMENT
+==================================================
+
+The supplied Paradise logo must be used exactly.
+
+Current cutout quality is unacceptable.
+
+Produce a professional transparent version from the supplied source image.
+
+Requirements:
+
+- preserve every chrome letter edge
+- preserve mower geometry
+- preserve grass blades
+- preserve sunset outline
+- preserve fine green accents
+- preserve orange highlights
+- preserve telephone-number lettering
+- remove unwanted dark background precisely
+- no visible white halo
+- no jagged black outline
+- no obvious rectangular image boundary
+- no blurred edge
+- no aggressive erosion of detail
+
+If perfect transparency cannot be achieved without damaging the logo, blend the original background seamlessly into the surrounding hero artwork instead.
+
+Never show the logo on an obvious pale rectangle or rough cutout.
+
+==================================================
+5. PUBLIC WEBSITE — MUST MATCH SAMPLE
+==================================================
+
+The current website is rejected.
+
+Do not patch the plain blue/green hero.
+
+Replace it.
+
+The new public homepage must closely reproduce the approved Paradise sample.
+
+Required hero composition:
+
+LEFT / CENTER:
+- bright Florida tropical/coastal property setting
+- lush manicured lawn
+- palm trees
+- blue sky / water / Treasure Coast atmosphere
+- exact Paradise logo prominently integrated
+- “We Make Your Lawn”
+- very prominent “PARADISE PERFECT”
+- RELIABLE • PROFESSIONAL • LOCAL
+- orange GET A FREE ESTIMATE button
+- large clickable Call or Text 772-323-9401 control
+
+TOP NAV:
+- Home
+- Services
+- Service Areas
+- About
+- Gallery
+- Reviews
+- Blog / Articles
+- Contact
+- Get a Free Quote
+- clickable phone
+- email
+
+RIGHT SIDE OF HERO:
+- Our Service Areas
+- Popular Articles
+
+Service-area cards:
+- Port St. Lucie
+- Jensen Beach
+- Stuart
+- Palm City
+- Hobe Sound
+
+Use the real city / civic / Welcome sign images where available.
+
+CITY SIGN PHOTOGRAPHS BELONG ON THE WEBSITE ONLY.
+
+Do not repeat those city-sign photographs in the operating application dashboard.
+
+Popular Articles:
+show approximately the five highest-value articles first.
+
+Article ranking should favor:
+1. likely search popularity
+2. homeowner usefulness
+3. local SEO value
+4. commercial importance
+
+Include a View All 31 Articles button.
+
+Below the hero:
+continue the same premium Paradise visual language.
+
+Do not abruptly switch to a generic white corporate template.
+
+The website should feel like one continuous designed experience.
+
+==================================================
+6. SEO RULE
+==================================================
+
+SEO remains a primary project requirement.
+
+Preserve or improve:
+
+- semantic H1/H2/H3
+- crawlable text
+- page titles
+- meta descriptions
+- canonical URLs
+- sitemap
+- service-area pages
+- article URLs
+- internal linking
+- related articles
+- local Treasure Coast wording
+- image alt attributes
+- accessible buttons and links
+- schema where appropriate
+
+Do not turn important website text into a single giant image.
+
+The visual design may use images, but actual searchable text must remain real HTML.
+
+==================================================
+7. APPLICATION — EXACT SAMPLE DESIGN FAMILY
+==================================================
+
+The operating app must use the lower dashboard portion of the approved sample as the visual authority.
+
+Keep the Business in a Box sidebar.
+
+Do NOT recreate the old Paradise top tabs.
+
+The application should use:
+
+- deep Paradise teal / green shell
+- morning-dew grass header
+- exact Paradise logo
+- Paradise Perfect slogan
+- clean vivid panels
+- high contrast
+- readable typography
+- bright functional status colors
+- premium rounded UI
+
+DO NOT USE PURE BLACK AS THE MAIN CONTENT PANEL COLOR.
+
+The user specifically rejected the black page panels.
+
+Continue the successful DASHBOARD color scheme through EVERY module.
+
+==================================================
+8. READABILITY RULE
+==================================================
+
+Current text is too small.
+
+Increase application typography globally.
+
+Minimum general body text target:
+approximately 15–16 px equivalent.
+
+Navigation:
+approximately 15–16 px or larger.
+
+Important card values:
+large and immediately readable.
+
+Section headings:
+clear and prominent.
+
+Do not shrink text merely to fit more content on screen.
+
+The design must fit 1920x1080 cleanly without requiring browser zoom-out.
+
+It must also remain responsive.
+
+==================================================
+9. DASHBOARD
+==================================================
+
+Preserve the successful structure of the current dashboard but visually match the approved sample more closely.
+
+Required operational dashboard sections:
+
+- Active Customers
+- Pending Quotes
+- Today’s Jobs
+- Revenue
+- Next Job
+- Today’s Schedule
+- functional Route Map
+- Quick Actions
+- Recent Activity
+- Customer Notes
+- Equipment Status
+- Inventory Alerts
+- Weather
+- Lawn Care Tip
+
+REMOVE CITY SIGN PHOTO CARDS FROM THE APP DASHBOARD.
+
+They belong only on the website.
+
+If an app Service Area Overview remains, use clean text/metric cards or a real map rather than city-sign photographs.
+
+==================================================
+10. OPERATIONS WORKSPACE
+==================================================
+
+The current Operations Workspace contains unnecessary duplicate navigation/actions.
+
+Remove duplicate controls that already exist in the sidebar unless they perform a genuinely different workflow.
+
+Do not create a “dashboard inside the dashboard.”
+
+Operations Workspace should provide meaningful operational functions such as:
+
+- workload overview
+- today / upcoming work
+- equipment readiness
+- inventory issues
+- expenses
+- maintenance
+- operational exceptions
+
+No duplicate Customers, Quotes, Jobs, etc. buttons if those modules already exist in the sidebar.
+
+==================================================
+11. EVERY PAGE MUST BE REDESIGNED INDIVIDUALLY
+==================================================
+
+Inspect every module.
+
+Do not apply one global CSS patch and assume the application is fixed.
+
+Individually inspect and redesign:
+
+- Dashboard
+- Operations Workspace
+- Alerts
+- Leads
+- Customers
+- Quotes
+- Schedule
+- Route Center
+- Jobs
+- Invoices & Payments
+- Documents
+- Photos & Attachments
+- Messages
+- Team
+- Equipment & Inventory
+- Weather
+- History
+- Reports
+- Backup
+- Settings
+
+For EACH module verify:
+
+- readable foreground/background contrast
+- consistent Paradise theme
+- readable font size
+- no black-on-black
+- no dark-green-on-black
+- no pale gray text on white
+- visible field labels
+- visible table values
+- buttons clearly distinguishable
+- sufficient spacing
+- logical workflow
+- no duplicated navigation
+
+==================================================
+12. ROUTE CENTER / MAP
+==================================================
+
+The current schematic map is not acceptable as the final Route Center.
+
+Implement a genuinely functional map.
+
+Preferred architecture:
+provider abstraction.
+
+Allow:
+- customer/job markers
+- daily route
+- service locations
+- selected job
+- opening route externally if required
+- provider configuration
+
+Use a practical real-map implementation such as:
+- Google Maps
+- Mapbox
+- Leaflet/OpenStreetMap
+or another appropriate provider.
+
+Do not commit secret API keys.
+
+If a key-based provider is unavailable, use a functional non-secret OpenStreetMap/Leaflet development implementation.
+
+A static decorative route drawing does not satisfy this requirement.
+
+==================================================
+13. WEATHER
+==================================================
+
+The Weather module must function.
+
+It must not be blank.
+
+At minimum provide useful current/forecast information for the Paradise service region, especially Port St. Lucie.
+
+Include:
+- current temperature
+- condition
+- rain chance or precipitation information where available
+- forecast
+- operational lawn-care relevance where reasonable
+
+Use a provider abstraction if appropriate.
+
+Do not hard-code fake weather as production data.
+
+==================================================
+14. REPORTS
+==================================================
+
+User likes the green accent.
+
+User rejects the black background.
+
+Redesign Reports using:
+- bright or medium Paradise green accents
+- off-white / pale green / light neutral cards
+- dark readable text
+- green graphs
+- strong contrast
+- clearly visible monetary values
+- clear chart labels
+
+Do not use giant black report panels.
+
+==================================================
+15. EQUIPMENT / INVENTORY
+==================================================
+
+Current black panels are rejected.
+
+Use dashboard-style Paradise cards.
+
+Make:
+- inventory quantity
+- reorder status
+- maintenance date
+- equipment condition
+- expenses
+clearly readable.
+
+Buttons must have visible contrast.
+
+==================================================
+16. OTHER MODULE CONTRAST
+==================================================
+
+Route Center:
+must be easily readable.
+
+Weather:
+must display actual useful information.
+
+Reports:
+no black background.
+
+Operations:
+no black panels.
+
+Lists/tables/forms:
+use light/pale-green cards or deep teal dashboard-style panels with high-contrast white text.
+
+Do not mix dark green text into black backgrounds.
+
+==================================================
+17. WORKFLOW / LOGIC
+==================================================
+
+Preserve functional Business in a Box workflow:
+
+Lead / Estimate Request
+→ Customer / Account
+→ Property / Location
+→ Quote
+→ Job
+→ Schedule
+→ Completion
+→ Invoice
+→ Payment
+→ History / Reporting
+
+Support:
+- individual residential customers
+- business/property-management customers
+- multiple properties under one account
+
+Keep record numbers / job numbers coherent.
+
+Every visible button must work.
+
+No placeholder controls disguised as operational controls.
+
+==================================================
+18. TENANT BRANDING
+==================================================
+
+Paradise is Tenant #1.
+
+Do not hard-code Paradise into the shared Business in a Box core.
+
+Settings must allow changing:
+
+- logo
+- company name
+- legal name
+- colors
+- owner
+- phone
+- email
+- slogan
+- service areas
+- imagery where supported
+- website content settings
+
+Paradise is the reference implementation, not the permanent universal branding.
+
+==================================================
+19. ARTICLES
+==================================================
+
+Include all 31 supplied SEO articles.
+
+Do not hard-code fixed public lawn-maintenance pricing.
+
+Public pricing CTA:
+Request an Estimate.
+
+Most prominent article subjects should include high-demand topics such as:
+
+- mowing frequency in Florida
+- St. Augustine grass
+- Florida weeds
+- lawn-care cost factors
+- rainy-season care
+- grass species comparison
+- hiring a lawn-care provider
+
+==================================================
+20. FUNCTIONAL REGRESSION
+==================================================
+
+After UI rebuild, perform clean-seed regression testing.
+
+Test:
+
+SERVER
+- start
+- health
+- API
+
+WEBSITE
+- homepage
+- service areas
+- article index
+- 31 articles
+- contact links
+- phone links
+- estimate intake
+- responsive behavior
+
+LEADS
+- create
+- edit/open
+- convert
+
+CUSTOMERS
+- create
+- duplicate detection
+- edit
+- multi-property
+
+QUOTES
+- create
+- edit
+- convert to job
+
+JOBS
+- create
+- schedule
+- statuses
+- completion
+
+INVOICES
+- create
+- partial payment
+- full payment
+
+COMMUNICATIONS
+- preferred contact
+- message routing
+
+EQUIPMENT
+- status
+- maintenance
+
+INVENTORY
+- quantity
+- reorder warnings
+
+DOCUMENTS
+- generation / associations
+
+PHOTOS
+- attach
+- view
+
+BACKUP
+- backup/export
+- restore/import
+
+TENANT SETTINGS
+- change company branding
+- verify application updates
+- verify website updates
+
+MAP
+- loads
+- markers work
+- route functions
+
+WEATHER
+- information loads
+- failure gracefully handled
+
+REPORTS
+- data visible
+- charts readable
+- correct contrast
+
+==================================================
+21. VISUAL REGRESSION — REQUIRED
+==================================================
+
+This is mandatory.
+
+Capture actual screenshots from the running localhost build at approximately 1920x1080.
+
+Compare:
+
+1. website homepage
+against the supplied approved website sample
+
+2. application dashboard
+against the supplied approved dashboard sample
+
+Also capture:
+- Route Center
+- Weather
+- Reports
+- Equipment & Inventory
+- Operations Workspace
+
+Do not merely check the DOM or CSS.
+
+Actually look at the rendered pages.
+
+If they do not look correct, revise them before packaging.
+
+==================================================
+22. FINAL ACCEPTANCE
+==================================================
+
+DO NOT DELIVER until:
+
+- website closely matches approved sample
+- app closely matches approved sample
+- supplied logo is crisp
+- no rough halo around logo
+- no generic/plain website hero
+- no giant black content cards
+- text is easily readable
+- app fits normal desktop screen
+- city sign photos are website-only
+- duplicate Operations buttons are removed
+- functional map works
+- weather works
+- reports are readable
+- all modules have consistent contrast
+- all sidebar modules are individually inspected
+- functional regression passes
+- tenant branding still works
+- SEO structure remains intact
+- all 31 articles remain
+- fixed public prices remain prohibited
+- ZIP integrity passes
+
+==================================================
+23. DELIVERABLE
+==================================================
+
+Create a NEW version.
+
+Do not overwrite previous builds.
+
+Recommended version:
+Paradise-Business-in-a-Box-v0.6.0
+
+Deliver:
+
+Paradise-Business-in-a-Box-v0.6.0.zip
+
+Include:
+
+- README.md
+- CHANGELOG.md
+- docs/CONSTITUTION.md
+- docs/PARADISE-TENANT-BUILD-SPECIFICATION.md
+- docs/REGRESSION-TEST-REPORT.md
+- docs/VISUAL-ACCEPTANCE-REPORT.md
+- app
+- server/backend
+- website
+- all 31 article pages
+- tenant config
+- tests
+- required assets
+
+In VISUAL-ACCEPTANCE-REPORT.md explicitly record:
+
+- pages visually reviewed
+- screen resolution used
+- supplied sample used as authority
+- known remaining visual differences, if any
+
+DO NOT SAY “MATCHES THE MOCKUP” IF IT DOES NOT.
+
+==================================================
+FINAL DIRECTIVE
+==================================================
+
+DO THE WORK.
+
+Do not stop after analysis.
+Do not produce another design proposal.
+Do not produce another mockup.
+Do not reimagine the approved sample.
+
+Modify the actual runnable code.
+
+The approved sample image is the target.
+
+Preserve all existing operational functionality unless a superior implementation replaces it.
+
+Run the application.
+Inspect every page.
+Fix every page.
+Run regression.
+Run visual acceptance.
+Then package the new build.

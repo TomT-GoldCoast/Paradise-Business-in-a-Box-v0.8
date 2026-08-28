@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07130d">
+<title>Paradise Lawn Care — Business in a Box</title>
+<link rel="stylesheet" href="/app/legacy/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="/app/assets/styles.css?v=0.7.3">
+</head>
+<body>
+<div class="app-shell paradise-production-shell">
+  <aside class="sidebar">
+    <div class="brand brand-hero-lockup">
+      <div class="brand-mark brand-logo-wrap"><img id="brandLogo" alt="Tenant logo"></div>
+      <div class="brand-copy"><strong id="platformBrand">Business in a Box</strong><span>Field Service Operations</span></div>
+    </div>
+    <div class="tenant-card"><span class="eyebrow">ACTIVE TENANT</span><strong id="tenantName">Loading…</strong><span id="tenantMeta"></span></div>
+    <nav id="nav" class="nav" aria-label="Primary application navigation"></nav>
+    <div class="sidebar-owner"><div class="owner-avatar">BP</div><div><strong>Brandon Pecci</strong><span>Owner / Operator</span></div></div>
+    <div class="sidebar-footer"><a href="/website" target="_blank" rel="noopener">Open connected website ↗</a><span>Business in a Box · Tenant #1</span></div>
+  </aside>
+  <main class="main">
+    <header class="topbar mockup-topbar">
+      <button class="mobile-menu" id="menuBtn" aria-label="Open navigation">☰</button>
+      <div class="dew-title"><span class="eyebrow" id="viewEyebrow">COMMAND CENTER</span><h1 id="pageTitle">Good morning</h1></div>
+      <div class="dew-slogan"><span>We Make Your Lawn</span><strong>PARADISE PERFECT</strong></div>
+      <div class="top-actions">
+        <a class="top-contact" href="tel:7723239401">☎ 772-323-9401</a>
+        <span class="sync"><i></i> Connected</span>
+        <select id="roleSelect" aria-label="Demo role"><option value="owner">Owner</option><option value="office">Office</option><option value="crew">Crew</option><option value="customer">Customer</option></select>
+        <div class="avatar" id="avatar">P</div>
+      </div>
+    </header>
+    <section id="content" class="content"><div class="loading">Loading workspace…</div></section>
+  </main>
+</div>
+<div id="modalRoot"></div><div id="toastRoot" class="toast-root"></div>
+<script src="/app/legacy/vendor/leaflet/leaflet.js"></script>
+<script type="module" src="/app/app.js?v=0.7.3"></script>
+</body>
+</html>
