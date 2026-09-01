@@ -1,6 +1,6 @@
 {
   "name": "paradise-combo-web-and-app",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -26,8 +26,11 @@
     "test:classification": "node tests/customer-classification.mjs",
     "test:routing-preferences": "node tests/routing-preferences.mjs"
   },
+  "dependencies": {
+    "pg": "^8.16.3"
+  },
   "engines": {
     "node": ">=18"
   },
-  "description": "Paradise Combo Web and App v0.8.9 with daily route isolation, road-network routing, origin-aware route recommendations, unified service menus, and responsive PC/iPad/phone layouts"
+  "description": "Paradise Combo Web and App v0.9.1 with PostgreSQL-backed persistent production storage."
 }
