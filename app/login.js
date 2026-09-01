@@ -1,0 +1,8 @@
+const $=s=>document.querySelector(s);const params=new URLSearchParams(location.search);const activation=params.get('activate')||'';let setup=false;
+async function api(path,opts={}){const r=await fetch(path,{...opts,headers:{'content-type':'application/json',...(opts.headers||{})}});const d=await r.json();if(!r.ok)throw new Error(d.error||'Request failed');return d}
+async function init(){
+ if(activation){$('#loginTitle').textContent='Activate Account';$('#loginSubtitle').textContent='Choose your username and a secure password to activate this account.';$('#submitBtn').textContent='Activate Account';return}
+ const s=await api('/api/auth/status');setup=!s.initialized;if(setup){$('#setupBanner').classList.remove('hidden');$('#nameField').classList.remove('hidden');$('#loginTitle').textContent='Create Owner Account';$('#loginSubtitle').textContent='First-time secure setup for the Owner / Administrator.';$('#submitBtn').textContent='Create Owner Account'}
+}
+$('#loginForm').onsubmit=async e=>{e.preventDefault();$('#error').textContent='';const f=Object.fromEntries(new FormData(e.currentTarget));try{if(activation){await api('/api/auth/activate',{method:'POST',body:JSON.stringify({token:activation,username:f.username,password:f.password})});history.replaceState(null,'','/login');$('#loginSubtitle').textContent='Account activated. Sign in with the credentials you just created.';$('#submitBtn').textContent='Sign In';params.delete('activate');location.href='/login';return}if(setup)await api('/api/auth/setup-owner',{method:'POST',body:JSON.stringify(f)});else await api('/api/auth/login',{method:'POST',body:JSON.stringify(f)});location.href='/app'}catch(err){$('#error').textContent=err.message}};
+init().catch(e=>$('#error').textContent=e.message);

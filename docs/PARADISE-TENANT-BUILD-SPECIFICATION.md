@@ -1,9 +1,9 @@
 PARADISE LAWN CARE OF THE TREASURE COAST
-BUSINESS IN A BOX — AUTHORITATIVE BUILD PROMPT
+COMBO WEB AND APP — AUTHORITATIVE BUILD PROMPT
 
 PROJECT GOAL
 
-Build and maintain one fully operational, modular Business in a Box application and public website for Paradise Lawn Care of the Treasure Coast.
+Build and maintain one fully operational, modular Combo Web and App application and public website for Paradise Lawn Care of the Treasure Coast.
 
 This is not a mockup project.
 Do not create another concept image unless specifically requested.
@@ -14,7 +14,7 @@ PROJECT AUTHORITIES
 
 Use the following source hierarchy and do not deviate from it:
 
-1. BUSINESS IN A BOX PROTOTYPE
+1. COMBO WEB AND APP PROTOTYPE
    Authority for:
    - modular architecture
    - shared business workflow
@@ -138,7 +138,7 @@ MULTI-TENANT RULE
 
 Paradise branding is a tenant configuration, not hard-coded product identity.
 
-The core Business in a Box application must support other companies.
+The core Combo Web and App application must support other companies.
 
 Settings must allow tenant-level changes to:
 - business name
@@ -252,7 +252,7 @@ The highest-value articles should be most prominent.
 
 APPLICATION DESIGN
 
-The application must use the Business in a Box side navigation.
+The application must use the Combo Web and App side navigation.
 
 Do not recreate the old Paradise top tab bar.
 
@@ -260,7 +260,7 @@ The previous Paradise application must not appear as a separate program running 
 
 Do not use iframe-style legacy embedding as the permanent user experience.
 
-The original Paradise functions must be incorporated into native Business in a Box modules.
+The original Paradise functions must be incorporated into native Combo Web and App modules.
 
 You may redesign the old Paradise application visually as much as necessary while preserving its functions.
 
@@ -298,7 +298,7 @@ Seed/demo data must be clearly demo data when applicable.
 
 CORE FUNCTIONAL MODULES
 
-Preserve and integrate all functions available from the original Paradise app and Business in a Box prototype.
+Preserve and integrate all functions available from the original Paradise app and Combo Web and App prototype.
 
 Expected modules include, at minimum:
 - Dashboard
@@ -348,7 +348,7 @@ Separate:
 - article content
 - integrations/providers
 
-Design modules so Business in a Box can support other service businesses later.
+Design modules so Combo Web and App can support other service businesses later.
 
 Avoid Paradise-specific logic in shared core code unless it belongs in tenant configuration or a lawn-care-specific module.
 
@@ -547,12 +547,12 @@ Do not:
 - publish fixed prices
 - replace the supplied logo
 - generate mockup images when working code was requested
-- drift into generic Business in a Box development at the expense of Paradise parity
+- drift into generic Combo Web and App development at the expense of Paradise parity
 
 When making a design or architectural decision, ask:
 
 1. Does it preserve Paradise functionality?
-2. Does it improve Business in a Box modularity?
+2. Does it improve Combo Web and App modularity?
 3. Does it match the approved Paradise visual specification?
 4. Does it protect SEO?
 5. Does it remain tenant-configurable?
@@ -571,7 +571,7 @@ A build may be called complete only when:
 - the supplied logo is used correctly
 - all retained controls work
 - original Paradise functionality has parity or documented equivalent
-- Business in a Box modular workflows work
+- Combo Web and App modular workflows work
 - tenant branding settings work
 - public estimate intake works
 - 31 SEO articles work

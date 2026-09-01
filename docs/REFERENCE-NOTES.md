@@ -13,8 +13,8 @@
 - expenses, maintenance and inventory as owner operations
 - resettable demo/test discipline
 
-These concepts were reimplemented against the Business in a Box API/data model rather than copied as a browser-local monolith.
+These concepts were reimplemented against the Combo Web and App API/data model rather than copied as a browser-local monolith.
 
 ## Claude Code library ideas used
 
-The Claude Code library was used as a reference for repository discipline, component boundaries, configuration patterns and testing strategy. No Claude Code product source is required at runtime and the Business in a Box implementation remains its own codebase.
+The Claude Code library was used as a reference for repository discipline, component boundaries, configuration patterns and testing strategy. No Claude Code product source is required at runtime and the Combo Web and App implementation remains its own codebase.

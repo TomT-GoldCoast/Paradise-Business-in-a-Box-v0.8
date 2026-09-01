@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const advanced=fs.readFileSync(new URL('../app/modules/advanced.js',import.meta.url),'utf8');
+const provider=fs.readFileSync(new URL('../app/modules/map-provider.js',import.meta.url),'utf8');
+assert.match(advanced,/let routePreference='local-roads'/,'Paradise default must prefer local roads');
+assert.match(advanced,/Fastest Route/);
+assert.match(advanced,/Avoid Highways/);
+assert.match(advanced,/Local Roads Preferred/);
+assert.match(advanced,/roadRoute\(points,routePreference\)/);
+assert.match(advanced,/optimizedTrip\(pts,origin,routePreference\)/);
+assert.match(provider,/use_highways:0\.05/,'avoid-highways profile missing');
+assert.match(provider,/use_highways:0,use_tolls:0/,'local-road profile missing');
+assert.match(provider,/valhalla1\.openstreetmap\.de/,'preference-capable road provider missing');
+assert.match(provider,/avoid=highways/,'Google Maps handoff should retain highway avoidance');
+console.log('routing-preferences: PASS');

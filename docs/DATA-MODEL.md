@@ -1,4 +1,4 @@
-# Business in a Box v0.3.0 Data Model
+# Combo Web and App v0.3.0 Data Model
 
 ## Tenant
 Identity, branding, contact data, service area, account prefix, website copy and workflow settings.

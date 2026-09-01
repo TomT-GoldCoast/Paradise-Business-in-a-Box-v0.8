@@ -2,7 +2,7 @@ import { spawn } from 'node:child_process';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 const port=43176,base=`http://127.0.0.1:${port}`;
-const child=spawn(process.execPath,['server/server.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,PORT:String(port)},stdio:['ignore','pipe','pipe']});
+const child=spawn(process.execPath,['server/server.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,PORT:String(port),BIB_TEST_AUTH_BYPASS:'1'},stdio:['ignore','pipe','pipe']});
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 async function ready(){for(let i=0;i<50;i++){try{if((await fetch(`${base}/api/health`)).ok)return}catch{}await wait(100)}throw new Error('server not ready')}
 try{

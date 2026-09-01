@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const app=fs.readFileSync(new URL('../app/app.js',import.meta.url),'utf8');
+const seed=JSON.parse(fs.readFileSync(new URL('../server/data/training-seed.json',import.meta.url),'utf8'));
+assert.match(app,/customerLotFilter/);
+assert.match(app,/customerFrequencyFilter/);
+assert.match(app,/Regular Lot/);
+assert.match(app,/Corner Lot/);
+assert.match(app,/Commercial Lot/);
+assert.match(app,/crew-property-tags/);
+assert.equal(seed.customers.length,44);
+assert.equal(seed.customers.filter(c=>c.lotType==='Regular Lot'&&c.monthlyValue===120).length,30);
+assert.equal(seed.customers.filter(c=>c.lotType==='Corner Lot'&&c.monthlyValue===140).length,14);
+assert.ok(seed.customers.every(c=>c.properties?.[0]?.propertyUse==='Residential'));
+assert.ok(seed.customers.every(c=>c.properties?.[0]?.lotType===c.lotType));
+console.log('customer-classification: PASS');

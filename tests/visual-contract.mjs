@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 const root=new URL('..',import.meta.url);
 const read=async p=>readFile(new URL(p,root),'utf8');
 const appIndex=await read('app/index.html'),appJs=await read('app/app.js'),appCss=await read('app/assets/styles.css'),advanced=await read('app/modules/advanced.js'),mapProvider=await read('app/modules/map-provider.js'),site=await read('website/index.html'),siteCss=await read('website/assets/site.css');
-for(const token of ['paradise-production-shell','mockup-topbar','dew-slogan','Brandon Pecci'])assert.ok(appIndex.includes(token),`app shell missing ${token}`);
+for(const token of ['paradise-production-shell','mockup-topbar','dew-slogan','trainingModeToggle'])assert.ok(appIndex.includes(token),`app shell missing ${token}`);
 for(const token of ['mock-dashboard','brand-dew-strip','mock-metrics',"Today's Schedule",'Route Center','Quick Actions','Equipment Status','Inventory Alerts'])assert.ok(appJs.includes(token),`dashboard missing ${token}`);
 assert.ok(!appJs.includes('Service Area Overview'),'city-sign service-area cards belong on website only');
 for(const token of ['mock-main-grid','quick-grid','forecast-grid','route-map-frame'])assert.ok(appCss.includes(token),`app CSS missing ${token}`);

@@ -1,6 +1,6 @@
 {
-  "name": "paradise-business-in-a-box",
-  "version": "0.8.0",
+  "name": "paradise-combo-web-and-app",
+  "version": "0.9.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,16 +9,25 @@
     "test:workflow": "node tests/workflow.mjs",
     "test:quotes": "node tests/quote-routing.mjs",
     "test:ui": "node tests/public-ui-regression.mjs",
-    "test:all": "npm test && npm run test:workflow && npm run test:quotes && npm run test:ui && npm run test:visual && npm run test:attachments && npm run test:tenant && npm run test:backup && npm run test:providers && npm run test:parity",
+    "test:all": "npm test && npm run test:workflow && npm run test:quotes && npm run test:ui && npm run test:visual && npm run test:attachments && npm run test:tenant && npm run test:backup && npm run test:providers && npm run test:parity && npm run test:auth && npm run test:isolation && npm run test:training && npm run test:release && npm run test:notifications && npm run test:responsive && npm run test:routing && npm run test:classification && npm run test:routing-preferences",
     "test:visual": "node tests/visual-contract.mjs",
     "test:attachments": "node tests/attachments.mjs",
     "test:tenant": "node tests/tenant-branding.mjs",
     "test:backup": "node tests/backup-restore.mjs",
     "test:providers": "node tests/provider-contracts.mjs",
-    "test:parity": "node tests/parity-upgrade.mjs"
+    "test:parity": "node tests/parity-upgrade.mjs",
+    "test:auth": "node tests/auth-backup-upgrade.mjs",
+    "test:isolation": "node tests/auth-isolation.mjs",
+    "test:training": "node tests/training-quickbooks.mjs",
+    "test:release": "node tests/release-v083.mjs",
+    "test:notifications": "node tests/estimate-notifications-v084.mjs",
+    "test:responsive": "node tests/responsive-layout.mjs",
+    "test:routing": "node tests/routing-daily.mjs",
+    "test:classification": "node tests/customer-classification.mjs",
+    "test:routing-preferences": "node tests/routing-preferences.mjs"
   },
   "engines": {
     "node": ">=18"
   },
-  "description": "Business in a Box v0.8.0 with Paradise Lawn Care Tenant #1 and v3.21B parity upgrades"
+  "description": "Paradise Combo Web and App v0.8.9 with daily route isolation, road-network routing, origin-aware route recommendations, unified service menus, and responsive PC/iPad/phone layouts"
 }

@@ -1,4 +1,4 @@
-# Business in a Box v0.3.0 Architecture
+# Combo Web and App v0.3.0 Architecture
 
 ## Current prototype
 
@@ -35,7 +35,7 @@ Authenticated Role-based Web Application
 - `server/server.mjs` HTTP routes and orchestration.
 - `server/lib/domain.mjs` reusable business rules and integrity helpers.
 - `server/lib/storage.mjs` persistence adapter.
-- `server/data/seed.json` canonical demo seed.
+- `server/data/production.json` live tenant data; `server/data/training.json` isolated practice data; separate production/training seed files support clean initialization and reset.
 - `server/data/demo.json` mutable local test data.
 - `tests/` automated API and workflow checks.
 - `docs/CONSTITUTION.md` governing product rules.

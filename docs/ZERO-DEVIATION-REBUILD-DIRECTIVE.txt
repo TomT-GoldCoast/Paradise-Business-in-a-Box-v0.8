@@ -1,5 +1,5 @@
 PARADISE LAWN CARE OF THE TREASURE COAST
-BUSINESS IN A BOX — ZERO-DEVIATION REBUILD PROMPT
+COMBO WEB AND APP — ZERO-DEVIATION REBUILD PROMPT
 
 THIS IS A PRODUCTION REBUILD TASK.
 
@@ -32,7 +32,7 @@ Use these sources in this exact order:
    Authority for:
    - modular architecture
    - tenant model
-   - reusable Business in a Box structure
+   - reusable Combo Web and App structure
    - side navigation
    - CRM lifecycle
    - account / property / quote / job / invoice workflow
@@ -72,7 +72,7 @@ DO NOT merely modify colors on v0.5.0.
 The user has rejected the current visual implementation.
 Rebuild the user-facing UI while preserving the operational architecture and working backend.
 
-4. Business in a Box Constitution / CONSTITUTION.md
+4. Combo Web and App Constitution / CONSTITUTION.md
    Platform governance authority.
 
 5. PARADISE TENANT BUILD SPECIFICATION / authoritative build prompt
@@ -301,7 +301,7 @@ The visual design may use images, but actual searchable text must remain real HT
 
 The operating app must use the lower dashboard portion of the approved sample as the visual authority.
 
-Keep the Business in a Box sidebar.
+Keep the Combo Web and App sidebar.
 
 Do NOT recreate the old Paradise top tabs.
 
@@ -560,7 +560,7 @@ Do not mix dark green text into black backgrounds.
 17. WORKFLOW / LOGIC
 ==================================================
 
-Preserve functional Business in a Box workflow:
+Preserve functional Combo Web and App workflow:
 
 Lead / Estimate Request
 → Customer / Account
@@ -590,7 +590,7 @@ No placeholder controls disguised as operational controls.
 
 Paradise is Tenant #1.
 
-Do not hard-code Paradise into the shared Business in a Box core.
+Do not hard-code Paradise into the shared Combo Web and App core.
 
 Settings must allow changing:
 

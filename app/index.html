@@ -4,21 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#07130d">
-<title>Paradise Lawn Care — Business in a Box</title>
-<link rel="stylesheet" href="/app/legacy/vendor/leaflet/leaflet.css">
-<link rel="stylesheet" href="/app/assets/styles.css?v=0.7.3">
+<title>Paradise Lawn Care — Combo Web and App</title>
+<link rel="stylesheet" href="/app/vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="/app/assets/styles.css?v=0.8.3">
 </head>
 <body>
 <div class="app-shell paradise-production-shell">
   <aside class="sidebar">
     <div class="brand brand-hero-lockup">
       <div class="brand-mark brand-logo-wrap"><img id="brandLogo" alt="Tenant logo"></div>
-      <div class="brand-copy"><strong id="platformBrand">Business in a Box</strong><span>Field Service Operations</span></div>
+      <div class="brand-copy"><strong id="platformBrand">Combo Web and App</strong><span>Field Service Operations</span></div>
     </div>
     <div class="tenant-card"><span class="eyebrow">ACTIVE TENANT</span><strong id="tenantName">Loading…</strong><span id="tenantMeta"></span></div>
     <nav id="nav" class="nav" aria-label="Primary application navigation"></nav>
-    <div class="sidebar-owner"><div class="owner-avatar">BP</div><div><strong>Brandon Pecci</strong><span>Owner / Operator</span></div></div>
-    <div class="sidebar-footer"><a href="/website" target="_blank" rel="noopener">Open connected website ↗</a><span>Business in a Box · Tenant #1</span></div>
+    <div class="training-switch-wrap" id="trainingSwitchWrap" hidden><button type="button" class="training-switch" id="trainingModeToggle"><span class="training-dot"></span><span><strong>Training Mode</strong><small id="trainingModeLabel">OFF · Production</small></span></button><button type="button" class="training-reset" id="trainingReset" hidden>Reset Training Data</button></div>
+    <div class="sidebar-owner"><div class="owner-avatar" id="sidebarAvatar">B</div><div><strong id="sidebarUserName">Loading…</strong><span id="sidebarUserRole">Authorized User</span></div></div>
+    <div class="sidebar-footer"><a href="/website" target="_blank" rel="noopener">Open connected website ↗</a><span>Combo Web and App · Tenant #1</span></div>
   </aside>
   <main class="main">
     <header class="topbar mockup-topbar">
@@ -28,7 +29,7 @@
       <div class="top-actions">
         <a class="top-contact" href="tel:7723239401">☎ 772-323-9401</a>
         <span class="sync"><i></i> Connected</span>
-        <select id="roleSelect" aria-label="Demo role"><option value="owner">Owner</option><option value="office">Office</option><option value="crew">Crew</option><option value="customer">Customer</option></select>
+        <button class="tiny" id="logoutBtn">Sign out</button>
         <div class="avatar" id="avatar">P</div>
       </div>
     </header>
@@ -36,7 +37,7 @@
   </main>
 </div>
 <div id="modalRoot"></div><div id="toastRoot" class="toast-root"></div>
-<script src="/app/legacy/vendor/leaflet/leaflet.js"></script>
-<script type="module" src="/app/app.js?v=0.7.3"></script>
+<script src="/app/vendor/leaflet/leaflet.js"></script>
+<script type="module" src="/app/app.js?v=0.8.3"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 import { spawn } from 'node:child_process';
 import assert from 'node:assert/strict';
-const port=43174,base=`http://127.0.0.1:${port}`;const child=spawn(process.execPath,['server/server.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,PORT:String(port)},stdio:['ignore','pipe','pipe']});const wait=ms=>new Promise(r=>setTimeout(r,ms));async function ready(){for(let i=0;i<40;i++){try{if((await fetch(`${base}/api/health`)).ok)return}catch{}await wait(100)}throw new Error('server not ready')}async function req(path,method='GET',body){const r=await fetch(base+path,{method,headers:{'content-type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});let d={};try{d=await r.json()}catch{}return{r,d}}
+const port=43174,base=`http://127.0.0.1:${port}`;const child=spawn(process.execPath,['server/server.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,PORT:String(port),BIB_TEST_AUTH_BYPASS:'1'},stdio:['ignore','pipe','pipe']});const wait=ms=>new Promise(r=>setTimeout(r,ms));async function ready(){for(let i=0;i<40;i++){try{if((await fetch(`${base}/api/health`)).ok)return}catch{}await wait(100)}throw new Error('server not ready')}async function req(path,method='GET',body){const r=await fetch(base+path,{method,headers:{'content-type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});let d={};try{d=await r.json()}catch{}return{r,d}}
 try{
  await ready();await req('/api/demo/reset','POST',{});
  let {r,d}=await req('/api/public/leads','POST',{name:'Workflow Test Lead',address:'777 Demo Way',phone:'7725559999',email:'workflow@example.com',service:'Standard Lawn Care'});assert.equal(r.status,201);const lead=d.lead;
@@ -22,6 +22,6 @@ try{
  ({r,d}=await req('/api/customer-requests','POST',{customerId:c.id,type:'Schedule change',message:'Friday please'}));assert.equal(r.status,201);
  ({r,d}=await req('/api/tenant','PUT',{shortName:'Paradise Test Brand',brand:{accent:'#123456'},websiteHero:{headline:'Brand test'}}));assert.equal(r.status,200);
  ({r,d}=await req('/api/public/config'));assert.equal(d.tenant.shortName,'Paradise Test Brand');assert.equal(d.tenant.websiteHero.headline,'Brand test');
- await req('/api/demo/reset','POST',{});({r,d}=await req('/api/bootstrap?role=owner'));assert.equal(d.customers.length,10);assert.equal(d.tenant.shortName,'Paradise Lawn Care');
+ await req('/api/demo/reset','POST',{});({r,d}=await req('/api/bootstrap?role=owner'));assert.equal(d.customers.length,44);assert.equal(d.tenant.shortName,'Paradise Lawn Care');
  console.log('workflow: PASS');
 }finally{child.kill('SIGTERM')}

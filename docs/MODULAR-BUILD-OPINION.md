@@ -2,7 +2,7 @@
 
 ## Verdict
 
-The Business in a Box direction is the correct architecture for Paradise **if Paradise remains Tenant #1 instead of becoming the source-code identity**.
+The Combo Web and App direction is the correct architecture for Paradise **if Paradise remains Tenant #1 instead of becoming the source-code identity**.
 
 The biggest risk in the original Paradise app is not that its features are wrong; many are useful and proven. The risk is that a single-page monolith can make each new feature touch unrelated screens, storage assumptions and event handlers. That becomes expensive when the same software must support a second, tenth or hundredth company.
 

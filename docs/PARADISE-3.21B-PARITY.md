@@ -1,6 +1,6 @@
 # Paradise Lawn Care v3.21B Parity Record — v0.8.0
 
-Paradise Lawn Care v3.21B remains the lawn-care functional reference. Business in a Box remains the reusable product architecture.
+Paradise Lawn Care v3.21B remains the lawn-care functional reference. Combo Web and App remains the reusable product architecture.
 
 | Paradise capability | v0.8.0 status | Result |
 |---|---|---|

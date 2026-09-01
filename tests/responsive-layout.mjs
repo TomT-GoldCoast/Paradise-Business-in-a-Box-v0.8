@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const site = fs.readFileSync(new URL('../website/assets/site.css', import.meta.url),'utf8');
+const app = fs.readFileSync(new URL('../app/assets/styles.css', import.meta.url),'utf8');
+const html = fs.readFileSync(new URL('../website/index.html', import.meta.url),'utf8');
+for (const width of ['1250','900','620']) assert.ok(site.includes(`max-width:${width}px`), `website breakpoint ${width}`);
+for (const width of ['1024','640']) assert.ok(app.includes(`max-width:${width}px`), `app breakpoint ${width}`);
+assert.ok(site.includes('.top{z-index:2000!important;isolation:isolate}'), 'website sticky header above content');
+assert.ok(site.includes('.nav-logo div,.contact-chip{display:none!important}'), 'iPad header removes crowding controls');
+assert.ok(site.includes('.hero-message{left:5%!important;right:5%!important;top:306px!important}'), 'iPad hero message is below logo');
+assert.ok(site.includes('.hero-actions{left:18px!important;right:18px!important;bottom:112px!important'), 'iPad hero actions have dedicated lower region');
+assert.ok(app.includes('.topbar,.mockup-topbar{z-index:2100!important;isolation:isolate}'), 'app sticky header above maps');
+assert.ok(app.includes('.leaflet-container{z-index:0!important;max-width:100%!important}'), 'Leaflet constrained to local stacking context');
+assert.ok(app.includes('.route-map-frame{height:390px!important;min-height:390px!important;width:100%!important}'), 'tablet route map sizing');
+assert.ok(app.includes('.route-map-frame{height:310px!important;min-height:310px!important}'), 'phone route map sizing');
+assert.match(html,/Get a Free Estimate/);
+assert.match(html,/Call 772-323-9401/);
+console.log('Responsive device contract passed: desktop, iPad/tablet, and phone breakpoints.');

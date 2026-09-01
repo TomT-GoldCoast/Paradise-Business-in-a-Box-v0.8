@@ -1,0 +1,333 @@
+{
+  "tenant": {
+    "id": "tenant_paradise",
+    "name": "Paradise Lawn Care of the Treasure Coast LLC",
+    "shortName": "Paradise Lawn Care",
+    "domain": "paradiselawncaretreasurecoast.com",
+    "vertical": "lawn-care",
+    "timezone": "America/New_York",
+    "serviceArea": "Port St. Lucie · Jensen Beach · Stuart · Palm City · Hobe Sound",
+    "brand": {
+      "mark": "P",
+      "accent": "#5cff00",
+      "accentDark": "#27c600",
+      "logoUrl": "/app/assets/paradise-logo-master.png",
+      "websiteLogoUrl": "/website/assets/paradise-logo-master.png",
+      "appLogoUrl": "/app/assets/paradise-logo-master.png",
+      "surface": "#111312",
+      "ink": "#f5f7f3",
+      "highlight": "#ff7a00",
+      "gold": "#ffbd46",
+      "nav": "#050606",
+      "themePreset": "paradise-sunset"
+    },
+    "phone": "772-323-9401",
+    "email": "paradiselawncare772@gmail.com",
+    "address": "Treasure Coast, FL",
+    "website": "https://paradiselawncaretreasurecoast.com",
+    "productName": "Combo Web and App",
+    "accountPrefix": "PLC",
+    "currency": "USD",
+    "locale": "en-US",
+    "websiteHero": {
+      "eyebrow": "PORT ST. LUCIE · TREASURE COAST",
+      "headline": "We make your lawn Paradise Perfect.",
+      "subheadline": "Reliable residential lawn maintenance with local routes, clear communication and a clean finish after every visit.",
+      "cta": "Request an Estimate"
+    },
+    "workflow": {
+      "autoInvoiceOnCompletion": true,
+      "requireCompletionNote": false,
+      "defaultJobDuration": 30
+    },
+    "ownerName": "Brandon Pecci",
+    "serviceAreas": [
+      "Port St. Lucie",
+      "Jensen Beach",
+      "Stuart",
+      "Palm City",
+      "Hobe Sound"
+    ],
+    "content": {
+      "blogEnabled": true,
+      "articleCount": 31,
+      "estimateOnlyPricing": true
+    },
+    "modules": {
+      "weather": true,
+      "history": true,
+      "alerts": true,
+      "documents": true,
+      "routes": true,
+      "backup": true,
+      "inventory": true,
+      "maintenance": true,
+      "expenses": true,
+      "communications": true,
+      "customerPortal": true,
+      "crew": true
+    },
+    "estimateNotifications": {
+      "email": "paradiselawncare772@gmail.com"
+    }
+  },
+  "users": [
+    {
+      "id": "u_owner",
+      "name": "Brandon Pecci",
+      "role": "owner",
+      "title": "Owner / Administrator",
+      "username": "brandon",
+      "email": "",
+      "passwordHash": "scrypt$bb9237a5639b976888922cf3659b8b1c$015dd9bd9dcf0293789aa90eea320cace1f1cc62a550e76e84a549c25f990378f2c264dbc4aefd988f278ed125992bda219625d2031c45bcb8a9744fa7b38de3",
+      "status": "Active",
+      "passwordChangedAt": "2026-09-01T11:46:16.182Z"
+    }
+  ],
+  "metrics": {
+    "activeCustomers": 0,
+    "monthlyRevenue": 0,
+    "openReceivables": 0,
+    "jobsToday": 0
+  },
+  "leads": [],
+  "jobs": [],
+  "invoices": [],
+  "customer": null,
+  "activity": [
+    {
+      "time": "7:46 AM",
+      "text": "Owner account initialized · Brandon Pecci",
+      "type": "security"
+    }
+  ],
+  "customers": [],
+  "counters": {
+    "quote": 1,
+    "job": 1,
+    "invoice": 1,
+    "account": 1,
+    "property": 1,
+    "expense": 3,
+    "inventory": 4,
+    "maintenance": 3,
+    "request": 2,
+    "communication": 1
+  },
+  "quotes": [],
+  "team": [
+    {
+      "id": "team_1",
+      "name": "Luis Ramirez",
+      "role": "Crew Lead",
+      "status": "Active",
+      "phone": "(772) 555-0120",
+      "rate": 24,
+      "skills": "Routing, mowing, equipment",
+      "email": "luis.ramirez@example.com",
+      "emergencyContact": "Emergency Contact",
+      "emergencyPhone": "(772) 555-0199",
+      "employmentType": "Employee",
+      "assignedEquipment": "Zero-turn mower #1"
+    },
+    {
+      "id": "team_2",
+      "name": "Mia Foster",
+      "role": "Crew Technician",
+      "status": "Active",
+      "phone": "(772) 555-0121",
+      "rate": 20,
+      "skills": "Mowing, edging, cleanup",
+      "email": "mia.foster@example.com",
+      "emergencyContact": "Emergency Contact",
+      "emergencyPhone": "(772) 555-0199",
+      "employmentType": "Employee",
+      "assignedEquipment": "Crew truck"
+    },
+    {
+      "id": "team_3",
+      "name": "Morgan Ellis",
+      "role": "Office Coordinator",
+      "status": "Active",
+      "phone": "(772) 555-0122",
+      "rate": 22,
+      "skills": "Scheduling, customer service, billing",
+      "email": "morgan.ellis@example.com",
+      "emergencyContact": "Emergency Contact",
+      "emergencyPhone": "(772) 555-0199",
+      "employmentType": "Employee",
+      "assignedEquipment": "Office"
+    }
+  ],
+  "services": [
+    {
+      "id": "svc_recurring",
+      "name": "Recurring Maintenance",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Recurring lawn mowing and routine property maintenance.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_one_time_cut",
+      "name": "One Time Cut",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "One-time lawn cutting service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_mow",
+      "name": "Mow",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Mowing service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_weed_eat",
+      "name": "Weed Eat",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "String trimming / weed eating service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_edge",
+      "name": "Edge",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Lawn and hardscape edging service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_blow",
+      "name": "Blow",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Blowing clippings and debris from serviced areas.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_property_cleanup",
+      "name": "Property Clean Up",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "General property cleanup service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_hedging",
+      "name": "Hedging",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Hedge and shrub trimming service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_knockdown",
+      "name": "Initial Property Knock Down",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Initial heavy-growth property knock-down service.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_debris",
+      "name": "Debris Removal",
+      "price": 0,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Removal of approved yard and landscape debris.",
+      "unit": "per service"
+    },
+    {
+      "id": "svc_lawn_standard",
+      "name": "Standard Lawn Care",
+      "price": 140,
+      "frequency": "4 visits/month",
+      "active": true,
+      "description": "Recurring mowing, weed eating, edging and blowing for a standard residential property.",
+      "unit": "per month"
+    },
+    {
+      "id": "svc_lawn_corner",
+      "name": "Corner Lot Care",
+      "price": 160,
+      "frequency": "4 visits/month",
+      "active": true,
+      "description": "Recurring lawn care configured for a larger corner-lot workload.",
+      "unit": "per month"
+    },
+    {
+      "id": "svc_cleanup",
+      "name": "Landscape Cleanup",
+      "price": 225,
+      "frequency": "As needed",
+      "active": true,
+      "description": "Seasonal or one-time landscape cleanup and property reset.",
+      "unit": "per project"
+    }
+  ],
+  "communications": {
+    "templates": [],
+    "log": []
+  },
+  "customerRequests": [],
+  "expenses": [],
+  "inventory": [
+    {
+      "id": "invitem_001",
+      "name": "Trimmer line",
+      "category": "Consumable",
+      "qty": 7,
+      "reorderAt": 4,
+      "unit": "spools"
+    },
+    {
+      "id": "invitem_002",
+      "name": "Edger blades",
+      "category": "Consumable",
+      "qty": 3,
+      "reorderAt": 4,
+      "unit": "blades"
+    },
+    {
+      "id": "invitem_003",
+      "name": "2-cycle oil",
+      "category": "Consumable",
+      "qty": 12,
+      "reorderAt": 6,
+      "unit": "bottles"
+    }
+  ],
+  "maintenance": [],
+  "attachments": [],
+  "billingRuns": [],
+  "payroll": [],
+  "integrations": {
+    "quickbooks": {
+      "provider": "quickbooks-online",
+      "connected": false,
+      "syncEnabled": false,
+      "customerSync": true,
+      "invoiceSync": true,
+      "paymentSync": true,
+      "expenseSync": false,
+      "lastSyncAt": "",
+      "mappings": {
+        "defaultItemId": "",
+        "expenseAccountId": ""
+      }
+    }
+  }
+}

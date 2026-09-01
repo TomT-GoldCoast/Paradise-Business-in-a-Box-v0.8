@@ -47,8 +47,48 @@ export function installBaseLayers(map, L, defaultLayer = 'satellite') {
   return { street, satellite, labels };
 }
 
-export async function roadRoute(points = []) {
+const VALHALLA_BASE = 'https://valhalla1.openstreetmap.de';
+
+function decodePolyline6(str='') {
+  let index=0,lat=0,lng=0; const coordinates=[];
+  while(index<str.length){
+    let shift=0,result=0,byte; do{byte=str.charCodeAt(index++)-63;result|=(byte&0x1f)<<shift;shift+=5}while(byte>=0x20&&index<=str.length);
+    lat += (result&1) ? ~(result>>1) : (result>>1);
+    shift=0;result=0; do{byte=str.charCodeAt(index++)-63;result|=(byte&0x1f)<<shift;shift+=5}while(byte>=0x20&&index<=str.length);
+    lng += (result&1) ? ~(result>>1) : (result>>1);
+    coordinates.push([lat/1e6,lng/1e6]);
+  }
+  return coordinates;
+}
+
+function preferenceOptions(preference='fastest'){
+  if(preference==='avoid-highways') return {use_highways:0.05,use_tolls:0.05,use_ferry:0.2};
+  if(preference==='local-roads') return {use_highways:0,use_tolls:0,use_ferry:0.1};
+  return null;
+}
+
+async function valhallaRequest(action, points, preference){
+  const payload={locations:points.map(([lat,lng])=>({lat,lon:lng})),costing:'auto',units:'miles'};
+  const opts=preferenceOptions(preference);
+  if(opts) payload.costing_options={auto:opts};
+  const url=`${VALHALLA_BASE}/${action}?json=${encodeURIComponent(JSON.stringify(payload))}`;
+  const response=await fetch(url,{headers:{Accept:'application/json','X-Client-Id':'paradise-combo-web-app'}});
+  if(!response.ok) throw new Error('Local-road routing service unavailable');
+  const json=await response.json();
+  const trip=json.trip;
+  if(!trip) throw new Error('No local-road route returned');
+  const geometry=(trip.legs||[]).flatMap((leg,i)=>{const decoded=decodePolyline6(leg.shape||'');return i?decoded.slice(1):decoded});
+  if(!geometry.length) throw new Error('No local-road route geometry returned');
+  const lengthMiles=Number(trip.summary?.length||0);
+  return {json,trip,geometry,distanceMeters:lengthMiles*1609.344,durationSeconds:Number(trip.summary?.time||0)};
+}
+
+export async function roadRoute(points = [], preference='fastest') {
   if (points.length < 2) return { geometry: points, distanceMeters: 0, durationSeconds: 0 };
+  if(preference!=='fastest'){
+    const routed=await valhallaRequest('route',points,preference);
+    return {geometry:routed.geometry,distanceMeters:routed.distanceMeters,durationSeconds:routed.durationSeconds};
+  }
   const coords = points.map(([lat,lng]) => `${lng},${lat}`).join(';');
   const url = `https://router.project-osrm.org/route/v1/driving/${coords}?overview=full&geometries=geojson&steps=false`;
   const response = await fetch(url, { headers: { Accept: 'application/json' } });
@@ -56,30 +96,31 @@ export async function roadRoute(points = []) {
   const json = await response.json();
   const route = json.routes?.[0];
   if (!route?.geometry?.coordinates) throw new Error('No road route returned');
-  return {
-    geometry: route.geometry.coordinates.map(([lng,lat]) => [lat,lng]),
-    distanceMeters: route.distance || 0,
-    durationSeconds: route.duration || 0
-  };
+  return {geometry:route.geometry.coordinates.map(([lng,lat])=>[lat,lng]),distanceMeters:route.distance||0,durationSeconds:route.duration||0};
 }
 
-export async function optimizedTrip(points = []) {
-  if (points.length < 2) return { geometry: points, order: points.map((_,i)=>i), distanceMeters: 0, durationSeconds: 0 };
-  const coords = points.map(([lat,lng]) => `${lng},${lat}`).join(';');
+export async function optimizedTrip(points = [], origin = null, preference='fastest') {
+  if (points.length < 2) return { geometry: origin && points.length ? [origin,...points] : points, order: points.map((_,i)=>i), distanceMeters: 0, durationSeconds: 0 };
+  const hasOrigin=Array.isArray(origin)&&origin.length===2;
+  const routedPoints=hasOrigin?[origin,...points]:points;
+  if(preference!=='fastest'){
+    const routed=await valhallaRequest('optimized_route',routedPoints,preference);
+    let locations=routed.trip.locations||[];
+    let order=locations.map((loc,i)=>Number.isInteger(loc.original_index)?loc.original_index:i);
+    if(hasOrigin) order=order.filter(i=>i!==0).map(i=>i-1);
+    return {geometry:routed.geometry,order,distanceMeters:routed.distanceMeters,durationSeconds:routed.durationSeconds};
+  }
+  const coords = routedPoints.map(([lat,lng]) => `${lng},${lat}`).join(';');
   const url = `https://router.project-osrm.org/trip/v1/driving/${coords}?source=first&roundtrip=false&overview=full&geometries=geojson&steps=false`;
   const response = await fetch(url, { headers: { Accept: 'application/json' } });
   if (!response.ok) throw new Error('Route recommendation service unavailable');
   const json = await response.json();
   const trip = json.trips?.[0];
   if (!trip?.geometry?.coordinates) throw new Error('No route recommendation returned');
-  const order = (json.waypoints || []).map((w, originalIndex) => ({ originalIndex, waypointIndex: w.waypoint_index ?? originalIndex }))
+  let order = (json.waypoints || []).map((w, originalIndex) => ({ originalIndex, waypointIndex: w.waypoint_index ?? originalIndex }))
     .sort((a,b) => a.waypointIndex-b.waypointIndex).map(x => x.originalIndex);
-  return {
-    geometry: trip.geometry.coordinates.map(([lng,lat]) => [lat,lng]),
-    order,
-    distanceMeters: trip.distance || 0,
-    durationSeconds: trip.duration || 0
-  };
+  if(hasOrigin) order=order.filter(i=>i!==0).map(i=>i-1);
+  return {geometry:trip.geometry.coordinates.map(([lng,lat])=>[lat,lng]),order,distanceMeters:trip.distance||0,durationSeconds:trip.duration||0};
 }
 
 export async function geocodeFullAddress(address) {
@@ -96,11 +137,12 @@ export async function geocodeFullAddress(address) {
   } catch { return null; }
 }
 
-export function externalRouteUrl(jobs = [], origin = '') {
+export function externalRouteUrl(jobs = [], origin = '', preference='fastest') {
   const addresses = jobs.map(job => job.fullAddress || job.address).filter(Boolean).slice(0, 9);
   if (!addresses.length) return '';
   const start = origin || addresses[0];
   const destination = addresses[addresses.length - 1];
   const waypoints = addresses.slice(1, -1).map(encodeURIComponent).join('%7C');
-  return `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(start)}&destination=${encodeURIComponent(destination)}${waypoints ? `&waypoints=${waypoints}` : ''}`;
+  const avoid=preference==='fastest'?'':'&avoid=highways';
+  return `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(start)}&destination=${encodeURIComponent(destination)}${waypoints ? `&waypoints=${waypoints}` : ''}${avoid}`;
 }

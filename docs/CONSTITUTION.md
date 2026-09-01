@@ -1,7 +1,7 @@
-# Business in a Box — Living Constitution
+# Combo Web and App — Living Constitution
 
 **Document version:** 0.4.4
-**Project generation:** Business in a Box Prototype v0.4.x  
+**Project generation:** Combo Web and App Prototype v0.4.x  
 **Status:** Authoritative governing development document  
 **Purpose:** Preserve the commercial product vision, architecture, data integrity, security boundaries, test discipline, and ability to onboard future paying businesses without rewriting core source code.
 
@@ -9,7 +9,7 @@
 
 ## 1. Project identity and commercial objective
 
-**Business in a Box is the product.** It is being built as a commercial, repeatable, online software business intended to be sold to many service businesses.
+**Combo Web and App is the product.** It is being built as a commercial, repeatable, online software business intended to be sold to many service businesses.
 
 Paradise Lawn Care of the Treasure Coast LLC is **Tenant #1, demonstration tenant, and field-service reference implementation.** Paradise Lawn Care is not the product and must never become hard-coded product identity.
 
@@ -17,7 +17,7 @@ Paradise Lawn Care v3.21B is an authoritative functional reference for proven fi
 
 The commercial promise is:
 
-> **The customer supplies their business identity and domain. Business in a Box delivers a professionally branded public website and the connected operating software that runs the business behind it.**
+> **The customer supplies their business identity and domain. Combo Web and App delivers a professionally branded public website and the connected operating software that runs the business behind it.**
 
 The long-term commercial target is a scalable SaaS/hosted platform capable of supporting hundreds or thousands of independent businesses.
 
@@ -27,7 +27,7 @@ The long-term commercial target is a scalable SaaS/hosted platform capable of su
 
 Before accepting any feature, workflow, shortcut, vendor integration, or data-model decision, apply this test:
 
-> **Does this strengthen Business in a Box as a repeatable commercial product, or does it merely solve a Paradise-specific problem?**
+> **Does this strengthen Combo Web and App as a repeatable commercial product, or does it merely solve a Paradise-specific problem?**
 
 Paradise-specific behavior must be expressed as one of:
 
@@ -44,7 +44,7 @@ If onboarding the next paying business requires editing core source code, the de
 
 ## 3. One platform, multiple experiences
 
-Business in a Box is one connected platform with one canonical data model and one API.
+Combo Web and App is one connected platform with one canonical data model and one API.
 
 Different participants receive different experiences based on authentication, permissions, business relationship, and device:
 
@@ -64,7 +64,7 @@ These are **not separate sources of truth**. Role/device changes the interface, 
 Configuration must be separated into three levels:
 
 ### Platform configuration
-Rules controlled by Business in a Box:
+Rules controlled by Combo Web and App:
 - core entities;
 - security rules;
 - workflow framework;
@@ -309,7 +309,7 @@ Do not duplicate a location merely because multiple organizations or contacts ha
 
 ## 13. Multi-property and portfolio customers
 
-Business in a Box must support organizations with many locations.
+Combo Web and App must support organizations with many locations.
 
 Examples:
 - property management companies;
@@ -380,7 +380,7 @@ Jobs are execution instances generated from or associated with the contract.
 
 ## 16. Flexible entry paths
 
-Business in a Box must not force every company into one sales path.
+Combo Web and App must not force every company into one sales path.
 
 Supported target paths include:
 
@@ -825,9 +825,9 @@ Paradise Lawn Care v3.21B may contribute:
 - test/demo patterns;
 - compatible reusable code where licensing/ownership and architecture permit.
 
-Reference code must be adapted to the Business in a Box architecture rather than forcing Business in a Box back into a browser-local monolith.
+Reference code must be adapted to the Combo Web and App architecture rather than forcing Combo Web and App back into a browser-local monolith.
 
-The Claude Code working library may contribute engineering and design ideas where useful, but Business in a Box remains an independent codebase.
+The Claude Code working library may contribute engineering and design ideas where useful, but Combo Web and App remains an independent codebase.
 
 ---
 
@@ -877,7 +877,7 @@ New visual features must not outrun the integrity of the underlying business eng
 
 As of this Constitution revision:
 
-- Business in a Box is the commercial product.
+- Combo Web and App is the commercial product.
 - Paradise Lawn Care of the Treasure Coast LLC is the first demonstration tenant and workflow reference.
 - Paradise Lawn Care v3.21B is the principal functional reference package.
 - The Claude Code working library is an auxiliary engineering/reference source.
