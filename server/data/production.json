@@ -6,7 +6,7 @@
     "domain": "paradiselawncaretreasurecoast.com",
     "vertical": "lawn-care",
     "timezone": "America/New_York",
-    "serviceArea": "Port St. Lucie · Jensen Beach · Stuart · Palm City · Hobe Sound",
+    "serviceArea": "Port St. Lucie \u00b7 Jensen Beach \u00b7 Stuart \u00b7 Palm City \u00b7 Hobe Sound",
     "brand": {
       "mark": "P",
       "accent": "#5cff00",
@@ -30,7 +30,7 @@
     "currency": "USD",
     "locale": "en-US",
     "websiteHero": {
-      "eyebrow": "PORT ST. LUCIE · TREASURE COAST",
+      "eyebrow": "PORT ST. LUCIE \u00b7 TREASURE COAST",
       "headline": "We make your lawn Paradise Perfect.",
       "subheadline": "Reliable residential lawn maintenance with local routes, clear communication and a clean finish after every visit.",
       "cta": "Request an Estimate"
@@ -76,12 +76,7 @@
       "id": "u_owner",
       "name": "Brandon Pecci",
       "role": "owner",
-      "title": "Owner / Administrator",
-      "username": "brandon",
-      "email": "",
-      "passwordHash": "scrypt$bb9237a5639b976888922cf3659b8b1c$015dd9bd9dcf0293789aa90eea320cace1f1cc62a550e76e84a549c25f990378f2c264dbc4aefd988f278ed125992bda219625d2031c45bcb8a9744fa7b38de3",
-      "status": "Active",
-      "passwordChangedAt": "2026-09-01T11:46:16.182Z"
+      "title": "Owner / Administrator"
     }
   ],
   "metrics": {
@@ -94,13 +89,7 @@
   "jobs": [],
   "invoices": [],
   "customer": null,
-  "activity": [
-    {
-      "time": "7:46 AM",
-      "text": "Owner account initialized · Brandon Pecci",
-      "type": "security"
-    }
-  ],
+  "activity": [],
   "customers": [],
   "counters": {
     "quote": 1,
