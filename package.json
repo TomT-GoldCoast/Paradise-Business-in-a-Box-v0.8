@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server/server.mjs",
+    "start": "node server/cors-entry.mjs",
     "test": "node tests/smoke.mjs",
     "test:workflow": "node tests/workflow.mjs",
     "test:quotes": "node tests/quote-routing.mjs",
