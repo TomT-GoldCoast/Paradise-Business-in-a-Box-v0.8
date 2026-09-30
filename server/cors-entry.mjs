@@ -1,3 +1,20 @@
+import { existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+
+const releaseRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const releaseArchive=path.join(releaseRoot,'deploy','prod-core-v0103.tgz');
+if(existsSync(releaseArchive)){
+  try{
+    execFileSync('tar',['-xzf',releaseArchive,'-C',releaseRoot],{stdio:'inherit'});
+    console.log('Applied Paradise v0.10.3 production payload.');
+  }catch(error){
+    console.error('Paradise v0.10.3 payload extraction failed:',error);
+    process.exit(1);
+  }
+}
+
 import http from 'node:http';
 
 const allowedOrigins=new Set([
